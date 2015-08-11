@@ -208,7 +208,6 @@ namespace NoSpy_1
             }
         }
 
-
         private void checkBoxCalendar_Unchecked(object sender, RoutedEventArgs e)
         {
             try
@@ -230,6 +229,136 @@ namespace NoSpy_1
         {
             TextBox textBox = this.textBoxExplanationDataPrivacy;
             textBox.Text = "Apps Zugriff auf meinen Kalender erlauben.\n\nEinige Apps benötige Zugriff auf Ihren Kalender, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.";
+        }
+
+
+        /*
+         * Position 
+         */
+        private void checkBoxPosition_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box position is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf Position deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxPosition_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box is NOT checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf Position erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Ist diese Einstellung aktiviert, kann jeder, der sich bei diesem Gerät anmeldet seine eigenen Positionseinstellungen ändern. Ist die Einstellung deaktiviert, die die Positionsangabe für alle Benuter, die sich anmelden, deaktiviert.\n\nWenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
+        }
+
+        /*
+         * Nachrichten 
+         */
+        private void checkBoxMessages_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box nachrichten is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{992AFA70-6F47-4148-B3E9-3003349C1548}\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf Nachrichten deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxMessages_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("unchecked nachrichten\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{992AFA70-6F47-4148-B3E9-3003349C1548}";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf Nachrichten erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxMessages_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Apps das Lesen oder Senden von Nachrichten (SMS oder MMS) erlauben.";
+        }
+
+        /*
+         * Funkempfang
+         */
+        private void checkBoxRadio_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box radio is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{A8804298-2D5F-42E3-9531-9C8C39EB29CE}\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf Funkempfang deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxRadio_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("unchecked nachrichten\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{A8804298-2D5F-42E3-9531-9C8C39EB29CE}";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf Funkempfang erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxRadio_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.";
         }
 
 
