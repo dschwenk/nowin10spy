@@ -4,12 +4,27 @@
         Title="NoWin10Spy" Height="498" Width="800" ResizeMode="NoResize">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="792" Margin="0,2,0,0">
-            <TabItem Header="Dataschutz" FontWeight="Bold" FontSize="14">
+            <TabItem Header="Datenschutz" FontWeight="Bold" FontSize="14">
                 <Grid Background="#FFE5E5E5">
-                    <CheckBox Name="checkBoxCamera" Content="Kamera verwenden" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
-                    <CheckBox Name="checkBoxMicrophone" Content="Mikrofon verwenden" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
-                    <CheckBox Name="checkBoxCalendar" Content="Kalender verwenden" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
-                    <TextBox Name="textBoxExplanationDataPrivacy" HorizontalAlignment="Left" Height="367" Margin="237,14,0,0" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
+                    <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
+                        <TabItem Header="Allgemein">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                        <TabItem Header="App- und Gerätezugriff">
+                            <Grid Background="#FFE5E5E5">
+                                <CheckBox x:Name="checkBoxCamera" Content="Kamera verwenden" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
+                                <CheckBox x:Name="checkBoxMicrophone" Content="Mikrofon verwenden" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
+                                <CheckBox x:Name="checkBoxCalendar" Content="Kalender verwenden" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
+                                <TextBox x:Name="textBoxExplanationDataPrivacy" HorizontalAlignment="Left" Height="360" Margin="237,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Kontoinformation">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                        <TabItem Header="Feedback und Diagnose">
+                            <Grid Background="#FFE5E5E5"/>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
 
             </TabItem>
