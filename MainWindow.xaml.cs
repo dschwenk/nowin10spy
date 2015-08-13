@@ -75,6 +75,7 @@ namespace NoSpy_1
          */
         private void checkAppAndDeviceAccess()
         {
+            checkAccountInfo();
             checkPosition();
             checkCamera();
             checkMicrophone();
