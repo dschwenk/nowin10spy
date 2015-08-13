@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 using Microsoft.Win32;
 
+
 namespace NoSpy_1
 {
     /// <summary>
@@ -24,17 +25,65 @@ namespace NoSpy_1
     {
         public MainWindow()
         {
-            InitializeComponent();
 
-            // check if camera is enabled
-            checkCamera();
-            checkMicrophone();
-            checkCalendar();
+            if (checkWindowsBuildNumber())
+            {
+                // OS is Windwos 10
+                Console.WriteLine("Windows 10 detected");
 
-            // remove status text
-            textBoxStatus.Text = "";
+                // initialize GUI
+                InitializeComponent();
+
+                // check if camera is enabled
+                checkCamera();
+                checkMicrophone();
+                checkCalendar();
+
+                // remove status text
+                textBoxStatus.Text = "";
+            }
+            else
+            {
+                // NO Windwos 10
+                Console.WriteLine("unsupported Windows detected");
+
+                // Configure the message box to be displayed
+                string messageBoxText = "Your OS version is not supported, Windows 10 or higher is required.";
+                string caption = "NoWin10Spy requires Windows 10";
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxImage icon = MessageBoxImage.Error;
+
+                // Display message box
+                MessageBox.Show(messageBoxText, caption, button, icon);
+
+                // exit app
+                System.Environment.Exit(1);
+            }
         }
 
+
+        public bool checkWindowsBuildNumber()
+        {
+            // Windows Operating System Versions
+            // https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
+
+            /*
+            Console.WriteLine("OSVersion VersionString: {0}", Environment.OSVersion.VersionString);
+
+
+            Console.WriteLine("OSVersion: {0}", Environment.OSVersion.Version.ToString());
+
+            int major = Environment.OSVersion.Version.Major;
+            */
+            return true;
+        }
+
+
+
+
+        /*
+         * Kamera
+         */
         private void checkCamera()
         {
             Console.Write("check if camera is enabled\n");
