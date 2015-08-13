@@ -8,7 +8,33 @@
                 <Grid Background="#FFE5E5E5">
                     <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
                         <TabItem Header="Allgemein">
-                            <Grid Background="#FFE5E5E5"/>
+                            <Grid Background="#FFE5E5E5">
+                                <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                    <TextBlock>
+                                        <AccessText TextWrapping="Wrap"  
+                                            Text="Apps die Verwendung der Werbungs-ID für App-übergreifende Erlebnisse erlauben" Margin="5,0,0,0" Width="579" Height="47"/>
+                                    </TextBlock>
+                                </CheckBox>
+                                <CheckBox x:Name="checkBoxAllowSmartscreen" HorizontalAlignment="Left" Margin="28,119,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                    <TextBlock>
+                                        <AccessText TextWrapping="Wrap"  
+                                            Text="SmartScreen-Filter einschalten, um von Windows Store-Apps verwendete Webinahlte (URLs) zu überprüfen" Margin="5,0,0,0" Width="490"/>
+                                    </TextBlock>
+                                </CheckBox>
+                                <CheckBox x:Name="checkBoxAllowWriting" HorizontalAlignment="Left" Margin="28,169,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                    <TextBlock>
+                                        <AccessText TextWrapping="Wrap"  
+                                            Text="Informationen zu meinem Schreibverhalten an Microsoft senden, um die Eingabe- und Schreibfunktion zu verbessern" Margin="5,0,0,0" Width="490"/>
+                                    </TextBlock>
+                                </CheckBox>
+                                <CheckBox x:Name="checkBoxAllowSpeech" HorizontalAlignment="Left" Margin="28,219,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                    <TextBlock>
+                                        <AccessText TextWrapping="Wrap"  
+                                            Text="Websites den Zugriff auf die eigene Sprachliste gestatten, um die Anzeige lokal relevanter Inhalte zu ermöglichen" Margin="5,0,0,0" Width="490"/>
+                                    </TextBlock>
+                                </CheckBox>
+                                <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können." VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
+                            </Grid>
                         </TabItem>
                         <TabItem Header="App- und Gerätezugriff">
                             <Grid Background="#FFE5E5E5">

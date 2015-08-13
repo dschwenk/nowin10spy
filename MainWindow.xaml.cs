@@ -46,22 +46,32 @@ namespace NoSpy_1
                 // NO Windwos 10
                 Console.WriteLine("unsupported Windows detected");
 
-                // Configure the message box to be displayed
-                string messageBoxText = "Your OS version is not supported, Windows 10 or higher is required.";
-                string caption = "NoWin10Spy requires Windows 10";
-                MessageBoxButton button = MessageBoxButton.OK;
-                MessageBoxImage icon = MessageBoxImage.Error;
-
-                // Display message box
-                MessageBox.Show(messageBoxText, caption, button, icon);
-
-                // exit app
-                System.Environment.Exit(1);
+                osVersionNotSupported();
             }
         }
 
+
         /*
-         * erify app- and device access and tick accordingly checkboxes
+         * Method to inform user via dialog that OS version is not supported / Windows 10 is required
+         */ 
+        private void osVersionNotSupported()
+        {
+            // Configure the message box to be displayed
+            string messageBoxText = "Your OS version is not supported, Windows 10 or higher is required.";
+            string caption = "NoWin10Spy requires Windows 10";
+            MessageBoxButton button = MessageBoxButton.OK;
+            MessageBoxImage icon = MessageBoxImage.Error;
+
+            // Display message box
+            MessageBox.Show(messageBoxText, caption, button, icon);
+
+            // exit app
+            System.Environment.Exit(1);
+        }
+
+
+        /*
+         * verify app- and device access and tick accordingly checkboxes
          */
         private void checkAppAndDeviceAccess()
         {
