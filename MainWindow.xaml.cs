@@ -38,8 +38,8 @@ namespace NoSpy_1
                 checkAppAndDeviceAccess();
 
 
-                // remove status text
-                // textBoxStatus.Text = "";
+                // remove status text in "taskbar"
+                textBoxStatus.Text = "";
             }
             else
             {
@@ -82,6 +82,7 @@ namespace NoSpy_1
             checkCalendar();
             checkMessages();
             checkRadio();
+            checkMoreDevices();
         }
 
 
@@ -575,6 +576,70 @@ namespace NoSpy_1
         {
             TextBox textBox = this.textBoxExplanationDataPrivacy;
             textBox.Text = "Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.";
+        }
+
+
+        /*
+         * Mit Geräten synchronisieren
+         */
+        private void checkMoreDevices()
+        {
+            Console.Write("check if radio is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled\\";
+            String key = "Value";
+
+            string moreDevicesValue = (string)Registry.GetValue(@path, key, null);
+            if (moreDevicesValue != null)
+            {
+                if (moreDevicesValue == "Allow")
+                {
+                    checkBoxRadio.IsChecked = true;
+                }
+                else
+                {
+                    checkBoxRadio.IsChecked = false;
+                }
+            }
+        }
+        private void checkBoxMoreDevices_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box radio is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf weitere Geräte deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxMoreDevices_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("unchecked nachrichten\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf weitere Geräte erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxMoreDevices_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind.";
         }
 
 
