@@ -34,10 +34,9 @@ namespace NoSpy_1
                 // initialize GUI
                 InitializeComponent();
 
-                // check if camera is enabled
-                checkCamera();
-                checkMicrophone();
-                checkCalendar();
+                // verify app- and device access and tick accordingly checkboxes
+                checkAppAndDeviceAccess();
+
 
                 // remove status text
                 textBoxStatus.Text = "";
@@ -61,8 +60,22 @@ namespace NoSpy_1
             }
         }
 
+        /*
+         * erify app- and device access and tick accordingly checkboxes
+         */
+        private void checkAppAndDeviceAccess()
+        {
+            checkPosition();
+            checkCamera();
+            checkMicrophone();
+            // checkContacts();
+            checkCalendar();
+            checkMessages();
+            checkRadio();
+        }
 
-        public bool checkWindowsBuildNumber()
+
+        private bool checkWindowsBuildNumber()
         {
             // Windows Operating System Versions
             // https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
@@ -78,6 +91,73 @@ namespace NoSpy_1
             return true;
         }
 
+
+
+
+
+        /*
+        * Position 
+        */
+        private void checkPosition()
+        {
+            Console.Write("check if position is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}\\";
+            String key = "Value";
+
+            string poistionValue = (string)Registry.GetValue(@path, key, null);
+            if (poistionValue != null)
+            {
+                if (poistionValue == "Allow")
+                {
+                    checkBoxPosition.IsChecked = true;
+                }
+                else
+                {
+                    checkBoxPosition.IsChecked = false;
+                }
+            }
+        }
+
+        private void checkBoxPosition_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box position is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf Position deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxPosition_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box is NOT checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf Position erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Ist diese Einstellung aktiviert, kann jeder, der sich bei diesem Gerät anmeldet seine eigenen Positionseinstellungen ändern. Ist die Einstellung deaktiviert, die die Positionsangabe für alle Benuter, die sich anmelden, deaktiviert.\n\nWenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
+        }
 
 
 
@@ -147,10 +227,10 @@ namespace NoSpy_1
         }
 
 
+
         /*
          * Mikrofon
          */
-
         private void checkMicrophone()
         {
             Console.Write("check if micorphone is enabled\n");
@@ -214,11 +294,14 @@ namespace NoSpy_1
         }
 
 
+        /*
+         * Kontakte
+         */
+
 
         /*
          * Kalender
          */
-
         private void checkCalendar()
         {
             Console.Write("check if calendar is enabled\n");
@@ -281,52 +364,32 @@ namespace NoSpy_1
         }
 
 
-        /*
-         * Position 
-         */
-        private void checkBoxPosition_Checked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                Console.Write("check box position is checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}\\";
-                String key = "Value";
-                Registry.SetValue(@path, key, "Allow");
 
-                textBoxStatus.Text = "Zugriff auf Position deaktiviert";
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void checkBoxPosition_Unchecked(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                Console.Write("check box is NOT checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}";
-                String key = "Value";
-                Registry.SetValue(@path, key, "Deny");
-
-                textBoxStatus.Text = "Zugriff auf Position erlaubt";
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
-        {
-            TextBox textBox = this.textBoxExplanationDataPrivacy;
-            textBox.Text = "Ist diese Einstellung aktiviert, kann jeder, der sich bei diesem Gerät anmeldet seine eigenen Positionseinstellungen ändern. Ist die Einstellung deaktiviert, die die Positionsangabe für alle Benuter, die sich anmelden, deaktiviert.\n\nWenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
-        }
 
         /*
          * Nachrichten 
          */
+        private void checkMessages()
+        {
+            Console.Write("check if messages is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{992AFA70-6F47-4148-B3E9-3003349C1548}\\";
+            String key = "Value";
+
+            string messagesValue = (string)Registry.GetValue(@path, key, null);
+            if (messagesValue != null)
+            {
+                if (messagesValue == "Allow")
+                {
+                    checkBoxMessages.IsChecked = true;
+                }
+                else
+                {
+                    checkBoxMessages.IsChecked = false;
+                }
+            }
+        }
+
         private void checkBoxMessages_Checked(object sender, RoutedEventArgs e)
         {
             try
@@ -367,9 +430,30 @@ namespace NoSpy_1
             textBox.Text = "Apps das Lesen oder Senden von Nachrichten (SMS oder MMS) erlauben.";
         }
 
+
         /*
          * Funkempfang
          */
+        private void checkRadio()
+        {
+            Console.Write("check if radio is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{A8804298-2D5F-42E3-9531-9C8C39EB29CE}\\";
+            String key = "Value";
+
+            string radioValue = (string)Registry.GetValue(@path, key, null);
+            if (radioValue != null)
+            {
+                if (radioValue == "Allow")
+                {
+                    checkBoxRadio.IsChecked = true;
+                }
+                else
+                {
+                    checkBoxRadio.IsChecked = false;
+                }
+            }
+        }
         private void checkBoxRadio_Checked(object sender, RoutedEventArgs e)
         {
             try
