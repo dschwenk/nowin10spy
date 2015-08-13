@@ -36,20 +36,18 @@
                                 <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können." VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
                             </Grid>
                         </TabItem>
-                        <TabItem Header="App- und Gerätezugriff">
+                        <TabItem Header="App- und Gerätezugriff" LostFocus="TabItem_LostFocus">
                             <Grid Background="#FFE5E5E5">
-                                <CheckBox x:Name="checkBoxPosition" Content="Zugriff auf Position" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
-                                <CheckBox x:Name="checkBoxCamera" Content="Zugriff auf Kamera" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
-                                <CheckBox x:Name="checkBoxMicrophone" Content="Zugriff auf Mikrofon" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
-                                <CheckBox x:Name="checkBoxContacts" Content="Zugriff auf Kontakte" HorizontalAlignment="Left" Margin="28,111,0,0" VerticalAlignment="Top"/>
-                                <CheckBox x:Name="checkBoxCalendar" Content="Zugriff auf Kalender" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
-                                <CheckBox x:Name="checkBoxMessages" Content="Zugriff auf Nachrichten" HorizontalAlignment="Left" Margin="28,171,0,0" VerticalAlignment="Top" Checked="checkBoxMessages_Checked" Unchecked="checkBoxMessages_Unchecked" MouseEnter="checkBoxMessages_MouseEnter"/>
-                                <CheckBox x:Name="checkBoxRadio" Content="Zugriff auf Funkempfang" HorizontalAlignment="Left" Margin="28,201,0,0" VerticalAlignment="Top" Checked="checkBoxRadio_Checked" Unchecked="checkBoxRadio_Unchecked" MouseEnter="checkBoxRadio_MouseEnter"/>
-                                <TextBox x:Name="textBoxExplanationDataPrivacy" HorizontalAlignment="Left" Height="360" Margin="237,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
+                                <CheckBox x:Name="checkBoxAccountInfo" Content="Zugriff auf Benutzerdaten" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxAccountInfo_Checked" MouseEnter="checkBoxAccountInfo_MouseEnter" Unchecked="checkBoxAccountInfo_Unchecked"/>
+                                <CheckBox x:Name="checkBoxPosition" Content="Zugriff auf Position" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
+                                <CheckBox x:Name="checkBoxCamera" Content="Zugriff auf Kamera" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
+                                <CheckBox x:Name="checkBoxMicrophone" Content="Zugriff auf Mikrofon" HorizontalAlignment="Left" Margin="28,111,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
+                                <CheckBox x:Name="checkBoxContacts" Content="Zugriff auf Kontakte" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxCalendar" Content="Zugriff auf Kalender" HorizontalAlignment="Left" Margin="28,171,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
+                                <CheckBox x:Name="checkBoxMessages" Content="Zugriff auf Nachrichten" HorizontalAlignment="Left" Margin="28,201,0,0" VerticalAlignment="Top" Checked="checkBoxMessages_Checked" Unchecked="checkBoxMessages_Unchecked" MouseEnter="checkBoxMessages_MouseEnter"/>
+                                <CheckBox x:Name="checkBoxRadio" Content="Zugriff auf Funkempfang" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Checked="checkBoxRadio_Checked" Unchecked="checkBoxRadio_Unchecked" MouseEnter="checkBoxRadio_MouseEnter"/>
+                                <TextBox x:Name="textBoxExplanationDataPrivacy" HorizontalAlignment="Left" Height="360" Margin="237,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
                             </Grid>
-                        </TabItem>
-                        <TabItem Header="Kontoinformation">
-                            <Grid Background="#FFE5E5E5"/>
                         </TabItem>
                         <TabItem Header="Feedback und Diagnose">
                             <Grid Background="#FFE5E5E5"/>

@@ -39,7 +39,7 @@ namespace NoSpy_1
 
 
                 // remove status text
-                textBoxStatus.Text = "";
+                // textBoxStatus.Text = "";
             }
             else
             {
@@ -103,6 +103,79 @@ namespace NoSpy_1
 
 
 
+        /*
+         * Methode setzt den Text der Datenschutzerklärungstextbox zurüeck
+         */
+        private void TabItem_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen.";
+        }
+
+
+        /*
+        * Kontoinformationen
+        */
+        private void checkAccountInfo()
+        {
+            Console.Write("check if account info is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{C1D23ACC-752B-43E5-8448-8D0E519CD6D6}\\";
+            String key = "Value";
+
+            string accountInfoValue = (string)Registry.GetValue(@path, key, null);
+            if (accountInfoValue != null)
+            {
+                if (accountInfoValue == "Allow")
+                {
+                    checkBoxAccountInfo.IsChecked = true;
+                }
+                else
+                {
+                    checkBoxAccountInfo.IsChecked = false;
+                }
+            }
+        }
+
+        private void checkBoxAccountInfo_Checked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box position is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{C1D23ACC-752B-43E5-8448-8D0E519CD6D6}\\";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Allow");
+
+                textBoxStatus.Text = "Zugriff auf Kontoinformationen deaktiviert";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxAccountInfo_Unchecked(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Console.Write("check box is NOT checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{C1D23ACC-752B-43E5-8448-8D0E519CD6D6}";
+                String key = "Value";
+                Registry.SetValue(@path, key, "Deny");
+
+                textBoxStatus.Text = "Zugriff auf Kontoinformationen erlaubt";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void checkBoxAccountInfo_MouseEnter(object sender, MouseEventArgs e)
+        {
+            TextBox textBox = this.textBoxExplanationDataPrivacy;
+            textBox.Text = "Apps den Zugriff auf meinen Namen, mein Bild und andere Kontoinfos erlauben";
+        }
 
 
         /*
@@ -503,6 +576,12 @@ namespace NoSpy_1
             TextBox textBox = this.textBoxExplanationDataPrivacy;
             textBox.Text = "Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.";
         }
+
+
+
+
+
+
 
 
 
