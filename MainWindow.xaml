@@ -59,24 +59,42 @@
             </TabItem>
             <TabItem Header="Windows Update" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
-                    <TextBlock HorizontalAlignment="Left" Margin="37,33,0,0" TextWrapping="Wrap" Text="Updates von mehr als einem Ort" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="55,57,0,0" TextWrapping="Wrap" Text="Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden." VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
-                    <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="55,115,0,0" VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Left" Margin="37,24,0,0" TextWrapping="Wrap" Text="Updates von mehr als einem Ort" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" Text="Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden." VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
+                    <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="55,106,0,0" VerticalAlignment="Top">
                         <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Wenn diese Option aktiviert ist, kann Ihr PC abhänging von der nachfolgenden Auswahl auch Teile zuvor heruntergeladener Windows Updates und -Apps an PCs in Ihrem lokalen Netzwerk oder PCs im Internet senden" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="81,205,0,0" TextWrapping="Wrap" Text="Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen" VerticalAlignment="Top" FontWeight="Normal" Width="477"/>
-                    <CheckBox Content="PCs in meinem lokalen Netzwerk" HorizontalAlignment="Left" Margin="81,254,0,0" VerticalAlignment="Top"/>
-                    <CheckBox Content="PCs in meinem lokalen Netzwerk und PCs im Internet" HorizontalAlignment="Left" Margin="81,284,0,0" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="81,196,0,0" TextWrapping="Wrap" Text="Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen" VerticalAlignment="Top" FontWeight="Normal" Width="477"/>
+                    <CheckBox x:Name="checkBoxAllowUpdateSharingLocalPCs" Content="PCs in meinem lokalen Netzwerk" HorizontalAlignment="Left" Margin="81,245,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxAllowUpdateSharingLocalAndInternetPCs" Content="PCs in meinem lokalen Netzwerk und PCs im Internet" HorizontalAlignment="Left" Margin="81,275,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="WiFi" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="Edge" FontSize="14" FontWeight="Bold">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <CheckBox Content='"Do Not Track"-Anforderungen (nicht nachverfolgen) senden' HorizontalAlignment="Left" Margin="36,33,0,0" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="76,56,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <CheckBox x:Name="checkBoxEdgePredictSites" Margin="36,111,0,0" VerticalAlignment="Top">
+                        <TextBlock>
+		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
+			                    Text="Seitenvorhersage verwenden, um den Browser zu beschleunigen sowie das Lesen und die gesamte Nutzung zu verbessern" Width="490"/>
+                        </TextBlock>
+                    </CheckBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="76,155,0,0" TextWrapping="Wrap" Text='Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <CheckBox x:Name="checkBoxEdgeSmartscreen" Margin="36,193,0,0" VerticalAlignment="Top">
+                        <TextBlock>
+		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
+			                    Text="Meinen PC mit SmartScreen-Filter vor schädlichen Websites und Downloads schützen" Width="490"/>
+                        </TextBlock>
+                    </CheckBox>
+                    <TextBlock HorizontalAlignment="Left" Margin="76,237,0,0" TextWrapping="Wrap" Text='Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>                    
+                    
+                </Grid>
             </TabItem>
         </TabControl>
         <Button Content="Einstellungen" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75"/>
