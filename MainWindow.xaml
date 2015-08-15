@@ -1,7 +1,7 @@
 ﻿<Window x:Class="NoSpy_1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MyW10" Height="498" Width="800" ResizeMode="CanMinimize">
+        Title="FixMy10" Height="498" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="792" Margin="0,2,0,0">
             <TabItem Header="Datenschutz" FontWeight="Bold" FontSize="14">
@@ -47,6 +47,7 @@
                                 <CheckBox x:Name="checkBoxMessages" Content="Zugriff auf Nachrichten" HorizontalAlignment="Left" Margin="28,201,0,0" VerticalAlignment="Top" Checked="checkBoxMessages_Checked" Unchecked="checkBoxMessages_Unchecked" MouseEnter="checkBoxMessages_MouseEnter"/>
                                 <CheckBox x:Name="checkBoxRadio" Content="Zugriff auf Funkempfang" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Checked="checkBoxRadio_Checked" Unchecked="checkBoxRadio_Unchecked" MouseEnter="checkBoxRadio_MouseEnter"/>
                                 <CheckBox x:Name="checkBoxMoreDevices" Content="mit Geräten synchronisieren" HorizontalAlignment="Left" Margin="28,261,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
+                                <CheckBox x:Name="checkBoxAppAndDevicesGetToKnowMe" Content="mich kennenlernen" HorizontalAlignment="Left" Margin="28,291,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
                                 <TextBox x:Name="textBoxExplanationDataPrivacy" HorizontalAlignment="Left" Height="360" Margin="239,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
                             </Grid>
                         </TabItem>
@@ -96,22 +97,22 @@
             </TabItem>
             <TabItem Header="Edge" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
-                    <CheckBox Content='"Do Not Track"-Anforderungen (nicht nachverfolgen) senden' HorizontalAlignment="Left" Margin="36,33,0,0" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,54,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
-                    <CheckBox x:Name="checkBoxEdgePredictSites" Margin="36,111,0,0" VerticalAlignment="Top">
+                    <CheckBox Content='"Do Not Track"-Anforderungen (nicht nachverfolgen) senden' HorizontalAlignment="Left" Margin="37,24,0,0" VerticalAlignment="Top"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="77,45,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <CheckBox x:Name="checkBoxEdgePredictSites" Margin="37,102,-1,0" VerticalAlignment="Top">
                         <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Seitenvorhersage verwenden, um den Browser zu beschleunigen sowie das Lesen und die gesamte Nutzung zu verbessern" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,151,0,0" TextWrapping="Wrap" Text='Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
-                    <CheckBox x:Name="checkBoxEdgeSmartscreen" Margin="36,193,0,0" VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Left" Margin="77,142,0,0" TextWrapping="Wrap" Text='Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <CheckBox x:Name="checkBoxEdgeSmartscreen" Margin="37,184,-1,0" VerticalAlignment="Top">
                         <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Meinen PC mit SmartScreen-Filter vor schädlichen Websites und Downloads schützen" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,233,0,0" TextWrapping="Wrap" Text='Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="77,224,0,0" TextWrapping="Wrap" Text='Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
 
                 </Grid>
             </TabItem>
@@ -125,9 +126,7 @@
                     <MenuItem Header="Datenschutzprofile">
 
                     </MenuItem>
-                    <MenuItem Header="Spenden">
 
-                    </MenuItem>
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
@@ -147,8 +146,8 @@
             </Button.ContextMenu>
         </Button>
         <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" BorderThickness="0" IsEnabled="False"/>
-        <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="663,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
-            <Hyperlink NavigateUri="http://myw10.net">http://MyW10.net</Hyperlink>
+        <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="663,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
+            <Hyperlink NavigateUri="http://fixmy10.net">http://FixMy10.net</Hyperlink>
         </TextBlock>
 
     </Grid>
