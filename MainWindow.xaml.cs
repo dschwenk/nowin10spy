@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 using Microsoft.Win32;
 
 
-namespace NoSpy_1
+namespace FixMy10
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
@@ -67,6 +68,48 @@ namespace NoSpy_1
 
             // exit app
             System.Environment.Exit(1);
+        }
+
+
+        /*
+         * Methode startet FixMy10 in neuem Prozess als Administartor und übergibt Parameter mit Änderungswunsch
+         * 
+         * http://stackoverflow.com/questions/16926232/run-process-as-administrator-from-a-non-admin-application
+         */
+        private void restartAppAsAdmin(object sender, RoutedEventArgs e)
+        {
+            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
+
+            ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\dschwenk\Documents\Visual Studio 2013\Projects\NoSpy_1\NoSpy_1\bin\Release\FixMy10.exe");
+            info.UseShellExecute = true;
+            info.Verb = "runas";
+
+            var button = sender as Button;
+            
+            // button passes information via CommandParameter
+            String code = button.CommandParameter.ToString();
+            
+            String processArgument = "";
+
+            // verify which CommandParamater was sent / which checkbox/button was clicked
+            if (code.ToString().Equals("disableXY"))
+            {
+                processArgument = "--message \"this is my message\"";
+            }
+
+            // pass argument to new process
+            info.Arguments = processArgument;
+            try
+            {
+                Process.Start(info);
+            }
+            catch (Win32Exception ex)
+            {
+                if (ex.NativeErrorCode == ERROR_CANCELLED)
+                    MessageBox.Show("Why you no select Yes?");
+                else
+                    throw;
+            }
         }
 
 
@@ -642,6 +685,11 @@ namespace NoSpy_1
             TextBox textBox = this.textBoxExplanationDataPrivacy;
             textBox.Text = "Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind.";
         }
+
+
+
+
+
 
 
 

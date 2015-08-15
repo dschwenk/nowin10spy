@@ -7,11 +7,11 @@ using System.Windows;
 // Allgemeine Informationen über eine Assembly werden über die folgenden 
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
-[assembly: AssemblyTitle("NoSpy_1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FixMy10")]
+[assembly: AssemblyDescription("FixMy10 hilft Ihnen Windows 10 an Ihre Bedürfnisse anzupassen")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("NoSpy_1")]
+[assembly: AssemblyCompany("FixMy10")]
+[assembly: AssemblyProduct("FixMy10")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
