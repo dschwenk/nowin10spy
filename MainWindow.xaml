@@ -1,7 +1,7 @@
 ﻿<Window x:Class="NoSpy_1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="NoWin10Spy" Height="498" Width="800" ResizeMode="NoResize">
+        Title="NoWin10Spy" Height="498" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="792" Margin="0,2,0,0">
             <TabItem Header="Datenschutz" FontWeight="Bold" FontSize="14">
