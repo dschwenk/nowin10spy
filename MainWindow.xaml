@@ -1,7 +1,7 @@
 ﻿<Window x:Class="NoSpy_1.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="NoWin10Spy" Height="498" Width="800" ResizeMode="CanMinimize">
+        Title="MyW10" Height="498" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="792" Margin="0,2,0,0">
             <TabItem Header="Datenschutz" FontWeight="Bold" FontSize="14">
@@ -116,13 +116,25 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="Einstellungen" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Einstellungen" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75">
+            <Button.ContextMenu>
+                <ContextMenu Name="button_settings_contextmenu">
+                    <MenuItem Header="Alle Einstellungen zurücksetzen" >
 
+                    </MenuItem>
+                    <MenuItem Header="Datenschutzprofile">
 
+                    </MenuItem>
+                    <MenuItem Header="Spenden">
+
+                    </MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
         <Button Name="Über" Content="Über" HorizontalAlignment="Left" Margin="701,4,0,0" VerticalAlignment="Top" Width="75" ToolTip="Über">
             <Button.ContextMenu>
                 <ContextMenu Name="button_help_contextmenu">
-                    <MenuItem Header="Über uns" >
+                    <MenuItem Header="Über MyW10" >
 
                     </MenuItem>
                     <MenuItem Header="Hilfe">
@@ -135,8 +147,8 @@
             </Button.ContextMenu>
         </Button>
         <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" BorderThickness="0" IsEnabled="False"/>
-        <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="658,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
-            <Hyperlink NavigateUri="http://google.com">http://nowin10spy.net</Hyperlink>
+        <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="663,442,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
+            <Hyperlink NavigateUri="http://myw10.net">http://MyW10.net</Hyperlink>
         </TextBlock>
 
     </Grid>
