@@ -1,20 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Microsoft.Win32;
 
 
 namespace FixMy10
@@ -26,12 +13,13 @@ namespace FixMy10
     {
 
         dataprivacyAppAndDeviceAccess dataprivacyAppAndDeviceAccess = new dataprivacyAppAndDeviceAccess();
+        helper helper = new helper();
 
 
         public MainWindow()
         {
 
-            if (checkWindowsBuildNumber())
+            if (helper.checkWindowsBuildNumber())
             {
                 // OS is Windwos 10
                 Console.WriteLine("Windows 10 detected");
@@ -77,49 +65,11 @@ namespace FixMy10
 
         /*
          * Methode startet FixMy10 in neuem Prozess als Administartor und übergibt Parameter mit Änderungswunsch
-         * 
-         * http://stackoverflow.com/questions/16926232/run-process-as-administrator-from-a-non-admin-application
          */
-        private void restartAppAsAdmin(object sender, RoutedEventArgs e)
+        public void clickedButtonrestartAppAsAdmin(object sender, RoutedEventArgs e)
         {
-            const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
-
-            // get process path of current running FixMy10
-            // http://stackoverflow.com/questions/5497064/c-how-to-get-the-full-path-of-running-process
-            var p = Process.GetCurrentProcess();
-            String currentProcessPath = p.MainModule.FileName;
-
-            // ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\dschwenk\Documents\Visual Studio 2013\Projects\NoSpy_1\NoSpy_1\bin\Release\FixMy10.exe");
-            ProcessStartInfo info = new ProcessStartInfo(@currentProcessPath);
-            info.UseShellExecute = true;
-            info.Verb = "runas";
-
-           
-            // button passes information via CommandParameter
-            var button = sender as Button;
-            String code = button.CommandParameter.ToString();
-            
-            String processArgument = "";
-
-            // verify which CommandParamater was sent / which checkbox/button was clicked
-            if (code.ToString().Equals("disableXY"))
-            {
-                processArgument = "--message \"this is my message\"";
-            }
-
-            // pass argument to new process
-            info.Arguments = processArgument;
-            try
-            {
-                Process.Start(info);
-            }
-            catch (Win32Exception ex)
-            {
-                if (ex.NativeErrorCode == ERROR_CANCELLED)
-                    MessageBox.Show("Why you no select Yes?");
-                else
-                    throw;
-            }
+            // restart app as admin in background
+            helper.restartAppAsAdmin(sender);
         }
 
 
@@ -137,23 +87,6 @@ namespace FixMy10
             dataprivacyAppAndDeviceAccess.checkAccessMessages();
             dataprivacyAppAndDeviceAccess.checkAccessRadio();
             dataprivacyAppAndDeviceAccess.checkAccessMoreDevices();
-        }
-
-
-        private bool checkWindowsBuildNumber()
-        {
-            // Windows Operating System Versions
-            // https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
-
-            /*
-            Console.WriteLine("OSVersion VersionString: {0}", Environment.OSVersion.VersionString);
-
-
-            Console.WriteLine("OSVersion: {0}", Environment.OSVersion.Version.ToString());
-
-            int major = Environment.OSVersion.Version.Major;
-            */
-            return true;
         }
 
 

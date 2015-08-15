@@ -94,7 +94,7 @@
             </TabItem>
             <TabItem Header="WLAN" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
-                    <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="restartAppAsAdmin"/>
+                    <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="clickedButtonrestartAppAsAdmin"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Edge" FontSize="14" FontWeight="Bold">

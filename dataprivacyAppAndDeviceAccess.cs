@@ -188,12 +188,12 @@ namespace FixMy10
         {
             try
             {
-                Console.Write("check box is checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{E5323777-F976-4f5b-9B55-B94699C46E44}\\";
+                Console.Write("check box is NOT checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{E5323777-F976-4f5b-9B55-B94699C46E44}";
                 String key = "Value";
-                Registry.SetValue(@path, key, "Allow");
+                Registry.SetValue(@path, key, "Deny");
 
-                String Text = "Zugriff auf Kamera erlaubt";
+                String Text = "Zugriff auf Kamera deaktivert";
                 ((MainWindow)Application.Current.MainWindow).setDataprivacyTextboxText(Text);
             }
             catch
@@ -205,12 +205,12 @@ namespace FixMy10
         {
             try
             {
-                Console.Write("check box is NOT checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{E5323777-F976-4f5b-9B55-B94699C46E44}";
+                Console.Write("check box is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{E5323777-F976-4f5b-9B55-B94699C46E44}\\";
                 String key = "Value";
-                Registry.SetValue(@path, key, "Deny");
+                Registry.SetValue(@path, key, "Allow");
 
-                String Text = "Zugriff auf Kamera deaktivert";
+                String Text = "Zugriff auf Kamera erlaubt";
                 ((MainWindow)Application.Current.MainWindow).setDataprivacyTextboxText(Text);
             }
             catch
@@ -253,12 +253,12 @@ namespace FixMy10
         {
             try
             {
-                Console.Write("check box is checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{2EEF81BE-33FA-4800-9670-1CD474972C3F}\\";
+                Console.Write("check box is NOT checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{2EEF81BE-33FA-4800-9670-1CD474972C3F}";
                 String key = "Value";
-                Registry.SetValue(@path, key, "Allow");
+                Registry.SetValue(@path, key, "Deny");
 
-                String Text = "Zugriff auf Mikrofon erlaubt";
+                String Text = "Zugriff auf Mikrofon deaktiviert";
                 ((MainWindow)Application.Current.MainWindow).setDataprivacyTextboxText(Text);
             }
             catch
@@ -270,12 +270,12 @@ namespace FixMy10
         {
             try
             {
-                Console.Write("check box is NOT checked\n");
-                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{2EEF81BE-33FA-4800-9670-1CD474972C3F}";
+                Console.Write("check box is checked\n");
+                String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\{2EEF81BE-33FA-4800-9670-1CD474972C3F}\\";
                 String key = "Value";
-                Registry.SetValue(@path, key, "Deny");
+                Registry.SetValue(@path, key, "Allow");
 
-                String Text = "Zugriff auf Mikrofon deaktiviert";
+                String Text = "Zugriff auf Mikrofon erlaubt";
                 ((MainWindow)Application.Current.MainWindow).setDataprivacyTextboxText(Text);
             }
             catch
