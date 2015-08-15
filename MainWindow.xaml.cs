@@ -80,13 +80,18 @@ namespace FixMy10
         {
             const int ERROR_CANCELLED = 1223; //The operation was canceled by the user.
 
-            ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\dschwenk\Documents\Visual Studio 2013\Projects\NoSpy_1\NoSpy_1\bin\Release\FixMy10.exe");
+            // get process path of current running FixMy10
+            var p = Process.GetCurrentProcess();
+            String currentProcessPath = p.MainModule.FileName;
+
+            // ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\dschwenk\Documents\Visual Studio 2013\Projects\NoSpy_1\NoSpy_1\bin\Release\FixMy10.exe");
+            ProcessStartInfo info = new ProcessStartInfo(@currentProcessPath);
             info.UseShellExecute = true;
             info.Verb = "runas";
 
-            var button = sender as Button;
-            
+           
             // button passes information via CommandParameter
+            var button = sender as Button;
             String code = button.CommandParameter.ToString();
             
             String processArgument = "";
