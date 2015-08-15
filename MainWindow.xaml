@@ -51,7 +51,26 @@
                             </Grid>
                         </TabItem>
                         <TabItem Header="Feedback und Diagnose">
-                            <Grid Background="#FFE5E5E5"/>
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock HorizontalAlignment="Left" Margin="28,14,0,0" TextWrapping="Wrap" Text="Feedbackhäufigkeit" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,40,0,0" TextWrapping="Wrap" Text="Mein Feedback soll von Windows angefordert werden" VerticalAlignment="Top" FontWeight="Normal"/>
+                                <ComboBox HorizontalAlignment="Left" Margin="50,64,0,0" VerticalAlignment="Top" Width="193" SelectedIndex="4">
+                                    <ComboBoxItem>Automatisch</ComboBoxItem>
+                                    <ComboBoxItem>Immer</ComboBoxItem>
+                                    <ComboBoxItem>Einmal täglich</ComboBoxItem>
+                                    <ComboBoxItem>Einmal wöchentlich</ComboBoxItem>
+                                    <ComboBoxItem>Nie</ComboBoxItem>
+                                </ComboBox>
+                                <TextBlock HorizontalAlignment="Left" Margin="28,118,0,0" TextWrapping="Wrap" Text="Diagnose- und Nutzungsdaten" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,142,0,0" TextWrapping="Wrap" Text="Sendet Ihre Gerätedaten an Microsoft (kann in den Privatkundenversionen von Windows 10 nicht komplett deaktiviert werden" VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
+                                <ComboBox HorizontalAlignment="Left" Margin="50,188,0,0" VerticalAlignment="Top" Width="193" SelectedIndex="0">
+                                    <ComboBoxItem>Einfach</ComboBoxItem>
+                                    <ComboBoxItem>Verbessert</ComboBoxItem>
+                                    <ComboBoxItem>Vollständig</ComboBoxItem>
+                                </ComboBox>
+                                <CheckBox Content="Telemetrie-Datenübertragung deaktivieren" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,275,0,0" TextWrapping="Wrap" Text="Microsoft kann darüber die Funktionen Ihres Geräts, die installierten Programme und die ordnungsgemäße Ausführung von Windows ermitteln. Außerdem wird mit dieser Option die allgemeine Fehlerberichterstattung an Microsoft aktiviert." VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
+                            </Grid>
                         </TabItem>
                     </TabControl>
                 </Grid>
@@ -78,22 +97,22 @@
             <TabItem Header="Edge" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <CheckBox Content='"Do Not Track"-Anforderungen (nicht nachverfolgen) senden' HorizontalAlignment="Left" Margin="36,33,0,0" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,56,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="76,54,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
                     <CheckBox x:Name="checkBoxEdgePredictSites" Margin="36,111,0,0" VerticalAlignment="Top">
                         <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Seitenvorhersage verwenden, um den Browser zu beschleunigen sowie das Lesen und die gesamte Nutzung zu verbessern" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,155,0,0" TextWrapping="Wrap" Text='Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="76,151,0,0" TextWrapping="Wrap" Text='Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
                     <CheckBox x:Name="checkBoxEdgeSmartscreen" Margin="36,193,0,0" VerticalAlignment="Top">
                         <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Meinen PC mit SmartScreen-Filter vor schädlichen Websites und Downloads schützen" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="76,237,0,0" TextWrapping="Wrap" Text='Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>                    
-                    
+                    <TextBlock HorizontalAlignment="Left" Margin="76,233,0,0" TextWrapping="Wrap" Text='Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+
                 </Grid>
             </TabItem>
         </TabControl>
