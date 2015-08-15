@@ -241,7 +241,7 @@ namespace NoSpy_1
         private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.textBoxExplanationDataPrivacy;
-            textBox.Text = "Ist diese Einstellung aktiviert, kann jeder, der sich bei diesem Gerät anmeldet seine eigenen Positionseinstellungen ändern. Ist die Einstellung deaktiviert, die die Positionsangabe für alle Benuter, die sich anmelden, deaktiviert.\n\nWenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
+            textBox.Text = "Wenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
         }
 
 

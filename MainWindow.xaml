@@ -60,14 +60,16 @@
             <TabItem Header="Windows Update" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <TextBlock HorizontalAlignment="Left" Margin="37,33,0,0" TextWrapping="Wrap" Text="Updates von mehr als einem Ort" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="63,70,0,0" TextWrapping="Wrap" Text="Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden." VerticalAlignment="Top" FontWeight="Normal"/>
-                    <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="130,224,0,0" VerticalAlignment="Top">
+                    <TextBlock HorizontalAlignment="Left" Margin="55,57,0,0" TextWrapping="Wrap" Text="Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden." VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
+                    <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="55,115,0,0" VerticalAlignment="Top">
                         <TextBlock>
-		                    <AccessText TextWrapping="Wrap"  
+		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="Wenn diese Option aktiviert ist, kann Ihr PC abhänging von der nachfolgenden Auswahl auch Teile zuvor heruntergeladener Windows Updates und -Apps an PCs in Ihrem lokalen Netzwerk oder PCs im Internet senden" Width="490"/>
                         </TextBlock>
                     </CheckBox>
-
+                    <TextBlock HorizontalAlignment="Left" Margin="81,205,0,0" TextWrapping="Wrap" Text="Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen" VerticalAlignment="Top" FontWeight="Normal" Width="477"/>
+                    <CheckBox Content="PCs in meinem lokalen Netzwerk" HorizontalAlignment="Left" Margin="81,254,0,0" VerticalAlignment="Top"/>
+                    <CheckBox Content="PCs in meinem lokalen Netzwerk und PCs im Internet" HorizontalAlignment="Left" Margin="81,284,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
             <TabItem Header="WiFi" FontSize="14" FontWeight="Bold">
