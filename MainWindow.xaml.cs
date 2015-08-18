@@ -2,7 +2,10 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-
+using System.Globalization;
+using System.Resources;
+using System.Reflection;
+using System.Threading;
 
 namespace FixMy10
 {
@@ -365,16 +368,6 @@ namespace FixMy10
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
             textBox.Text = "Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind.";
         }
-
-
-
-
-
-
-
-
-
-
 
 
 

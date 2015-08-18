@@ -1,7 +1,7 @@
 ﻿using System;
-
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Windows.Controls;
 
 
@@ -26,6 +26,27 @@ namespace FixMy10
             int major = Environment.OSVersion.Version.Major;
             */
             return true;
+        }
+
+
+        public void setAppLanguage()
+        {
+            // get operating system language
+            // http://stackoverflow.com/questions/5710127/get-operating-system-language-in-c-sharp
+
+            // Language Codes
+            // https://msdn.microsoft.com/de-de/library/ms533052(v=vs.85).aspx
+
+            CultureInfo ci = CultureInfo.CurrentUICulture;
+            Console.WriteLine("CultureInfo: " + ci.Name);
+            if (ci.Name.Contains("de")) // de-at, de-li, de-ch, de-lu
+            {
+                FixMy10.Properties.Resources.Culture = new CultureInfo("de-DE");
+            }
+            else
+            {
+                FixMy10.Properties.Resources.Culture = new CultureInfo("en-US");
+            }
         }
 
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -17,6 +18,11 @@ namespace FixMy10
         // dictionary to collect command line arguments
         Dictionary<string, string> arguments = new Dictionary<string, string>();
 
+
+        public App()
+        {
+
+        }
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
@@ -54,6 +60,9 @@ namespace FixMy10
             }
 
 
+            // set app language
+            helper helper = new helper();
+            helper.setAppLanguage();
 
         }
 

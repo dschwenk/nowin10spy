@@ -121,6 +121,6 @@
     <value>CultureInfo</value>
   </data>
   <data name="testString" xml:space="preserve">
-    <value>this is my teststring</value>
+    <value>this is my de-DE testString</value>
   </data>
 </root>
