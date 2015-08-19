@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Globalization;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -21,9 +22,38 @@ namespace FixMy10
 
         public App()
         {
-
+            
+            
+            // set app language
+            helper helper = new helper();
+            helper.setAppLanguage();
         }
 
+
+        /*
+         * Methode schließt derzeitiges MainWindow und instanziert neues MainWindow mit neuer Sprache
+         */
+        public static void changeCultureAndUpdateGUI(CultureInfo newCulture)
+        {
+            Thread.CurrentThread.CurrentCulture = newCulture;
+            Thread.CurrentThread.CurrentUICulture = newCulture;
+
+            var oldWindow = Application.Current.MainWindow;
+
+            // set string resource file to new culture
+            FixMy10.Properties.Resources.Culture = newCulture;
+
+            Application.Current.MainWindow = new MainWindow();
+            Application.Current.MainWindow.Show();
+
+            oldWindow.Close();
+        }
+
+
+        /*
+         * Method is called after app startup
+         * command line arguments are processed, language of GUI is set up
+         */
         private void Application_Startup(object sender, StartupEventArgs e)
         {
             /*
@@ -60,9 +90,7 @@ namespace FixMy10
             }
 
 
-            // set app language
-            helper helper = new helper();
-            helper.setAppLanguage();
+
 
         }
 

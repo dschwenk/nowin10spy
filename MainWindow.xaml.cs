@@ -373,6 +373,18 @@ namespace FixMy10
 
 
 
+        /*
+         * Test methode um Spracheänderung zu testen
+         */
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            App.changeCultureAndUpdateGUI(new CultureInfo("en-US"));
+        }
+
+
+
+
+
 
 
     }

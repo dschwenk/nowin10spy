@@ -97,6 +97,7 @@
                 <Grid Background="#FFE5E5E5">
                     <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="clickedButtonrestartAppAsAdmin"/>
                     <TextBlock HorizontalAlignment="Left" Margin="169,109,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.testString}" VerticalAlignment="Top"/>
+                    <Button Content="change culture" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Edge" FontSize="14" FontWeight="Bold">
