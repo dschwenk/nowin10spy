@@ -61,11 +61,65 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die CultureInfo ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
         /// </summary>
-        public static string String {
+        public static string TabItem_Datenschutz {
             get {
-                return ResourceManager.GetString("String", resourceCulture);
+                return ResourceManager.GetString("TabItem_Datenschutz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_Datenschutz_Allgemein {
+            get {
+                return ResourceManager.GetString("TabItem_Datenschutz_Allgemein", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_Datenschutz_AppUndGeräte {
+            get {
+                return ResourceManager.GetString("TabItem_Datenschutz_AppUndGeräte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_Datenschutz_FeedbackUndDiagnose {
+            get {
+                return ResourceManager.GetString("TabItem_Datenschutz_FeedbackUndDiagnose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_Edge {
+            get {
+                return ResourceManager.GetString("TabItem_Edge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_WindowsUpdate {
+            get {
+                return ResourceManager.GetString("TabItem_WindowsUpdate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        /// </summary>
+        public static string TabItem_WLAN {
+            get {
+                return ResourceManager.GetString("TabItem_WLAN", resourceCulture);
             }
         }
         

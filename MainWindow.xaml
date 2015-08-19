@@ -5,10 +5,10 @@
         Title="FixMy10" Height="498" Width="800" ResizeMode="CanMinimize">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="433" VerticalAlignment="Top" Width="792" Margin="0,2,0,0">
-            <TabItem Header="Datenschutz" FontWeight="Bold" FontSize="14">
+            <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz}" FontWeight="Bold" FontSize="14">
                 <Grid Background="#FFE5E5E5">
                     <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
-                        <TabItem Header="Allgemein">
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_Allgemein}">
                             <Grid Background="#FFE5E5E5">
                                 <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687">
                                     <TextBlock>
@@ -37,7 +37,7 @@
                                 <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können." VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
                             </Grid>
                         </TabItem>
-                        <TabItem Header="App- und Gerätezugriff" LostFocus="TabItem_LostFocus">
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_AppUndGeräte}" LostFocus="TabItem_LostFocus">
                             <Grid Background="#FFE5E5E5">
                                 <CheckBox x:Name="appAndDeviceAccessCheckBoxAccountInfo" Content="Zugriff auf Benutzerdaten" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxAccountInfo_Checked" MouseEnter="checkBoxAccountInfo_MouseEnter" Unchecked="checkBoxAccountInfo_Unchecked"/>
                                 <CheckBox x:Name="appAndDeviceAccessCheckBoxPosition" Content="Zugriff auf Position" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
@@ -52,7 +52,7 @@
                                 <TextBox x:Name="appAndDeviceAccessTextBoxExplanation" HorizontalAlignment="Left" Height="360" Margin="239,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
                             </Grid>
                         </TabItem>
-                        <TabItem Header="Feedback und Diagnose">
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_FeedbackUndDiagnose}">
                             <Grid Background="#FFE5E5E5">
                                 <TextBlock HorizontalAlignment="Left" Margin="28,14,0,0" TextWrapping="Wrap" Text="Feedbackhäufigkeit" VerticalAlignment="Top"/>
                                 <TextBlock HorizontalAlignment="Left" Margin="50,40,0,0" TextWrapping="Wrap" Text="Mein Feedback soll von Windows angefordert werden" VerticalAlignment="Top" FontWeight="Normal"/>
@@ -78,7 +78,7 @@
                 </Grid>
 
             </TabItem>
-            <TabItem Header="Windows Update" FontSize="14" FontWeight="Bold">
+            <TabItem Header="{x:Static properties:Resources.TabItem_WindowsUpdate}" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <TextBlock HorizontalAlignment="Left" Margin="37,24,0,0" TextWrapping="Wrap" Text="Updates von mehr als einem Ort" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" Text="Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden." VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
@@ -93,14 +93,14 @@
                     <CheckBox x:Name="checkBoxAllowUpdateSharingLocalAndInternetPCs" Content="PCs in meinem lokalen Netzwerk und PCs im Internet" HorizontalAlignment="Left" Margin="81,275,0,0" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="WLAN" FontSize="14" FontWeight="Bold">
+            <TabItem Header="{x:Static properties:Resources.TabItem_WLAN}" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="clickedButtonrestartAppAsAdmin"/>
                     <TextBlock HorizontalAlignment="Left" Margin="169,109,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.testString}" VerticalAlignment="Top"/>
                     <Button Content="change culture" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Edge" FontSize="14" FontWeight="Bold">
+            <TabItem Header="{x:Static properties:Resources.TabItem_Edge}" FontSize="14" FontWeight="Bold">
                 <Grid Background="#FFE5E5E5">
                     <CheckBox Content='"Do Not Track"-Anforderungen (nicht nachverfolgen) senden' HorizontalAlignment="Left" Margin="37,24,0,0" VerticalAlignment="Top"/>
                     <TextBlock HorizontalAlignment="Left" Margin="77,45,0,0" TextWrapping="Wrap" Text='Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.' VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>

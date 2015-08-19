@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="TabItem_Datenschutz" xml:space="preserve">
+    <value>Data Privacy</value>
+  </data>
+  <data name="TabItem_Datenschutz_Allgemein" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TabItem_Datenschutz_AppUndGeräte" xml:space="preserve">
+    <value>App- and Device Access</value>
+  </data>
+  <data name="TabItem_Datenschutz_FeedbackUndDiagnose" xml:space="preserve">
+    <value>Feedback and Diagnostics</value>
+  </data>
+  <data name="TabItem_Edge" xml:space="preserve">
+    <value>Edge</value>
+  </data>
+  <data name="TabItem_WindowsUpdate" xml:space="preserve">
+    <value>Windows Update</value>
+  </data>
+  <data name="TabItem_WLAN" xml:space="preserve">
+    <value>Wifi</value>
+  </data>
   <data name="testString" xml:space="preserve">
     <value>this is my en-US testString</value>
   </data>
