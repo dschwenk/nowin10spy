@@ -61,7 +61,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutz ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz {
             get {
@@ -70,7 +70,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Allgemein ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz_Allgemein {
             get {
@@ -79,7 +79,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die App- und Gerätezugriff ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz_AppUndGeräte {
             get {
@@ -88,7 +88,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Feedback und Diagnose ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz_FeedbackUndDiagnose {
             get {
@@ -97,7 +97,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Edge ähnelt.
         /// </summary>
         public static string TabItem_Edge {
             get {
@@ -106,7 +106,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Windows Update ähnelt.
         /// </summary>
         public static string TabItem_WindowsUpdate {
             get {
@@ -115,7 +115,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die WLAN ähnelt.
         /// </summary>
         public static string TabItem_WLAN {
             get {
@@ -124,7 +124,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die this is my teststring ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die this is my default teststring ähnelt.
         /// </summary>
         public static string testString {
             get {

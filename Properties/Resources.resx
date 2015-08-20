@@ -118,27 +118,27 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="TabItem_Datenschutz" xml:space="preserve">
-    <value />
+    <value>Datenschutz</value>
   </data>
   <data name="TabItem_Datenschutz_Allgemein" xml:space="preserve">
-    <value />
+    <value>Allgemein</value>
   </data>
   <data name="TabItem_Datenschutz_AppUndGeräte" xml:space="preserve">
-    <value />
+    <value>App- und Gerätezugriff</value>
   </data>
   <data name="TabItem_Datenschutz_FeedbackUndDiagnose" xml:space="preserve">
-    <value />
+    <value>Feedback und Diagnose</value>
   </data>
   <data name="TabItem_Edge" xml:space="preserve">
-    <value />
+    <value>Edge</value>
   </data>
   <data name="TabItem_WindowsUpdate" xml:space="preserve">
-    <value />
+    <value>Windows Update</value>
   </data>
   <data name="TabItem_WLAN" xml:space="preserve">
-    <value />
+    <value>WLAN</value>
   </data>
   <data name="testString" xml:space="preserve">
-    <value>this is my teststring</value>
+    <value>this is my default teststring</value>
   </data>
 </root>
