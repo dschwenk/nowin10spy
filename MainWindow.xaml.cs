@@ -16,6 +16,7 @@ namespace FixMy10
     {
 
         dataprivacyAppAndDeviceAccess dataprivacyAppAndDeviceAccess = new dataprivacyAppAndDeviceAccess();
+        dataprivacyGeneral dataprivacyGeneral = new dataprivacyGeneral();
         helper helper = new helper();
 
 
@@ -29,6 +30,9 @@ namespace FixMy10
 
                 // initialize GUI
                 InitializeComponent();
+
+                // verify general dataprivacy settings and tick accordingly checkboxes
+                checkGeneralDataprivacyAccess();
 
                 // verify app- and device access and tick accordingly checkboxes
                 checkAppAndDeviceAccess();
@@ -45,6 +49,19 @@ namespace FixMy10
                 osVersionNotSupported();
             }
         }
+
+
+
+
+
+                /*
+         * Methode setzt den Text der Statuszeile
+         */
+        public void setStatusUpdateText(String text)
+        {
+            textBoxStatus.Text = text;
+        }
+
 
 
         /*
@@ -77,6 +94,16 @@ namespace FixMy10
 
 
         /*
+         * verify general dataprivacy settings and tick accordingly checkboxes
+         */
+        private void checkGeneralDataprivacyAccess()
+        {
+            dataprivacyGeneral.verifyAccessAdID();
+
+        }
+
+
+        /*
          * verify app- and device access and tick accordingly checkboxes
          */
         private void checkAppAndDeviceAccess()
@@ -93,6 +120,42 @@ namespace FixMy10
         }
 
 
+        /// <summary>
+        /// Tab Datenschutz
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+
+
+        // Methoden zum Checkbox an/abhaken
+        public void checkCheckboxWerbeID()
+        {
+            checkBoxAllowUseAdID.IsChecked = true;
+        }
+        public void uncheckCheckboxWerbeID()
+        {
+            checkBoxAllowUseAdID.IsChecked = false;
+        }
+
+        // Listener Checkboxen
+        private void checkBoxAllowUseAdID_Checked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.allowAccessAdID();
+        }
+
+        private void checkBoxAllowUseAdID_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.disallowAccessAdID();
+        }
+
+
+
+        /// <summary>
+        /// Tab App- Gerätezugriff
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
 
         /*
          * Methode setzt den Text der Datenschutzerklärungstextbox zurüeck
@@ -104,14 +167,7 @@ namespace FixMy10
         }
 
 
-        /*
-         * Methode setzt den Text der Datenschutzerklärungstextbox
-         */
-        public void setDataprivacyTextboxText(String text)
-        {
-            TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = text;
-        }
+
 
 
         /*
@@ -131,11 +187,11 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxAccountInfo_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessAccountInfo();
+            dataprivacyAppAndDeviceAccess.allowAccessAccountInfo();            
         }
         private void checkBoxAccountInfo_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessAccountInfo();
+            dataprivacyAppAndDeviceAccess.disallowAccessAccountInfo();
         }
         private void checkBoxAccountInfo_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -163,11 +219,11 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxPosition_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessPosition();
+            dataprivacyAppAndDeviceAccess.allowAccessPosition();
         }
         private void checkBoxPosition_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessPosition();
+            dataprivacyAppAndDeviceAccess.disallowAccessPosition();            
         }
         private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -193,11 +249,11 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxCamera_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessCamera();
+            dataprivacyAppAndDeviceAccess.allowAccessCamera();
         }
         private void checkBoxCamera_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessCamera();
+            dataprivacyAppAndDeviceAccess.disallowAccessCamera();
         }
         private void checkBoxCamera_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -223,11 +279,11 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxMicrophone_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessMicrophone();
+            dataprivacyAppAndDeviceAccess.allowAccessMicrophone();
         }
         private void checkBoxMicrophone_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessMicrophone();
+            dataprivacyAppAndDeviceAccess.disallowAccessMicrophone();
         }
         private void checkBoxMicrophone_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -257,12 +313,12 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxCalendar_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessCalendar();
+            dataprivacyAppAndDeviceAccess.allowAccessCalendar();
         }
 
         private void checkBoxCalendar_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessCalendar();
+            dataprivacyAppAndDeviceAccess.disallowAccessCalendar();
         }
 
         private void checkBoxCalendar_MouseEnter(object sender, MouseEventArgs e)
@@ -290,12 +346,12 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxMessages_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessMessages();
+            dataprivacyAppAndDeviceAccess.allowAccessMessages();
         }
 
         private void checkBoxMessages_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessMessages();
+            dataprivacyAppAndDeviceAccess.disallowAccessMessages();
         }
 
         private void checkBoxMessages_MouseEnter(object sender, MouseEventArgs e)
@@ -322,12 +378,12 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxRadio_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessRadio();
+            dataprivacyAppAndDeviceAccess.allowAccessRadio();
         }
 
         private void checkBoxRadio_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessRadio();
+            dataprivacyAppAndDeviceAccess.disallowAccessRadio();
         }
 
         private void checkBoxRadio_MouseEnter(object sender, MouseEventArgs e)
@@ -355,12 +411,12 @@ namespace FixMy10
         // Listener Checkboxen
         private void checkBoxMoreDevices_Checked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.disallowAccessMoreDevices();
+            dataprivacyAppAndDeviceAccess.allowAccessMoreDevices();
         }
 
         private void checkBoxMoreDevices_Unchecked(object sender, RoutedEventArgs e)
         {
-            dataprivacyAppAndDeviceAccess.allowAccessMoreDevices();
+            dataprivacyAppAndDeviceAccess.disallowAccessMoreDevices();
         }
 
         private void checkBoxMoreDevices_MouseEnter(object sender, MouseEventArgs e)
@@ -380,6 +436,13 @@ namespace FixMy10
         {
             App.changeCultureAndUpdateGUI(new CultureInfo("en-US"));
         }
+
+
+
+
+
+
+
 
 
 

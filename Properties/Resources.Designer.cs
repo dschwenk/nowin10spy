@@ -385,6 +385,168 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Verwendung von Werbe-ID deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_WerbeID_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_WerbeID_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Verwendung von Werbe-ID erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_WerbeID_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_WerbeID_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kontoinformationen deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffBenutzerinformationen_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffBenutzerinformationen_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kontoinformationen erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffBenutzerinformationen_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffBenutzerinformationen_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Funkübertragung deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffFunk_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffFunk_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Funkübertragung erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffFunk_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffFunk_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kalender deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffKalender_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffKalender_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kalender erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffKalender_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffKalender_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kamera deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffKamera_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffKamera_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kamera erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffKamera_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffKamera_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Mikrofon deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffMikrofon_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffMikrofon_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Mikrofon erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffMikrofon_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffMikrofon_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Nachrichten  deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffNachrichten_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffNachrichten_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Nachrichten erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffNachrichten_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffNachrichten_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Position deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffPosition_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffPosition_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Position erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffPosition_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffPosition_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf weitere Geräte deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffWeitereGeräte_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffWeitereGeräte_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf weitere Geräte erlaubt ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffWeitereGeräte_erlaubt {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffWeitereGeräte_erlaubt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutz ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz {

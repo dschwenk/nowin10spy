@@ -2,7 +2,9 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
+using System.Windows;
 using System.Windows.Controls;
+
 
 
 namespace FixMy10
@@ -98,6 +100,7 @@ namespace FixMy10
                     throw;
             }
         }
+
 
 
 

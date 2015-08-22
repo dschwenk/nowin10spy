@@ -326,4 +326,58 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   <data name="TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden" xml:space="preserve">
     <value>Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen</value>
   </data>
+  <data name="StatusText_WerbeID_deaktiviert" xml:space="preserve">
+    <value>Verwendung von Werbe-ID deaktiviert</value>
+  </data>
+  <data name="StatusText_WerbeID_erlaubt" xml:space="preserve">
+    <value>Verwendung von Werbe-ID erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffBenutzerinformationen_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Kontoinformationen deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffBenutzerinformationen_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Kontoinformationen erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffFunk_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Funkübertragung deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffFunk_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Funkübertragung erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffKalender_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Kalender deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffKalender_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Kalender erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffKamera_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Kamera deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffKamera_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Kamera erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffMikrofon_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Mikrofon deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffMikrofon_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Mikrofon erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffNachrichten_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Nachrichten  deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffNachrichten_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Nachrichten erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffPosition_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Position deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffPosition_erlaubt" xml:space="preserve">
+    <value>Zugriff auf Position erlaubt</value>
+  </data>
+  <data name="StatusText_ZugriffWeitereGeräte_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf weitere Geräte deaktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffWeitereGeräte_erlaubt" xml:space="preserve">
+    <value>Zugriff auf weitere Geräte erlaubt</value>
+  </data>
 </root>

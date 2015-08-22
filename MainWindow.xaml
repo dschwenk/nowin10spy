@@ -10,7 +10,7 @@
                     <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
                         <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_Allgemein}">
                             <Grid Background="#FFE5E5E5">
-                                <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687" Checked="checkBoxAllowUseAdID_Checked" Unchecked="checkBoxAllowUseAdID_Unchecked">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_WerbeID}" Margin="5,0,0,0" Width="579" Height="47"/>
