@@ -100,7 +100,7 @@ namespace FixMy10
         private void TabItem_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_DefaultText;
         }
 
 
@@ -140,7 +140,7 @@ namespace FixMy10
         private void checkBoxAccountInfo_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Apps den Zugriff auf meinen Namen, mein Bild und andere Kontoinfos erlauben";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_BenutzerInfo;
         }
 
 
@@ -172,7 +172,7 @@ namespace FixMy10
         private void checkBoxPosition_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Wenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Position;
         }
 
 
@@ -202,7 +202,7 @@ namespace FixMy10
         private void checkBoxCamera_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Apps die Verwendung meiner Kamera erlauben.\n\nEinige Apps benötige Zugriff auf Ihre Kamera, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.\n\nWhat is Camera and how do camera settings work?\n\nMany apps and services request and use your device’s camera(s) to provide you with convenient services, such as Skype video calls or taking a photo to add to your favorite social site. Windows camera settings give you control over which apps can use your camera(s).\n\nHow do I know when the camera is on?\n\nIf your system comes with a camera light, the light will turn on when the camera is in use. If your system doesn’t have a camera light, a notification will appear letting you know when the camera turns on or off.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kamera;
         }
 
 
@@ -232,7 +232,7 @@ namespace FixMy10
         private void checkBoxMicrophone_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Apps die Verwendung meines Mikrofons erlauben.\n\nEinige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Mikrofon;
         }
 
 
@@ -268,7 +268,7 @@ namespace FixMy10
         private void checkBoxCalendar_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Apps Zugriff auf meinen Kalender erlauben.\n\nEinige Apps benötige Zugriff auf Ihren Kalender, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kalender;
         }
 
 
@@ -301,7 +301,7 @@ namespace FixMy10
         private void checkBoxMessages_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Apps das Lesen oder Senden von Nachrichten (SMS oder MMS) erlauben.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Messages;
         }
 
 
@@ -333,7 +333,7 @@ namespace FixMy10
         private void checkBoxRadio_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.";
+            textBox.Text = textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Radio;
         }
 
 
@@ -366,7 +366,7 @@ namespace FixMy10
         private void checkBoxMoreDevices_MouseEnter(object sender, MouseEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
-            textBox.Text = "Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind.";
+            textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_MoreDevices;
         }
 
 

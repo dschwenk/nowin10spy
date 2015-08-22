@@ -141,4 +141,153 @@
   <data name="testString" xml:space="preserve">
     <value>this is my default teststring</value>
   </data>
+  <data name="Button_Einstellungen" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Button_Ueber" xml:space="preserve">
+    <value>Über</value>
+  </data>
+  <data name="ChechBox_TabAllgemein_Schreibverhalten" xml:space="preserve">
+    <value>Informationen zu meinem Schreibverhalten an Microsoft senden, um die Eingabe- und Schreibfunktion zu verbessern</value>
+  </data>
+  <data name="ChechBox_TabAllgemein_SmartScreen" xml:space="preserve">
+    <value>SmartScreen-Filter einschalten, um von Windows Store-Apps verwendete Webinahlte (URLs) zu überprüfen</value>
+  </data>
+  <data name="ChechBox_TabAllgemein_Sprachliste" xml:space="preserve">
+    <value>Websites den Zugriff auf die eigene Sprachliste gestatten, um die Anzeige lokal relevanter Inhalte zu ermöglichen</value>
+  </data>
+  <data name="ChechBox_TabAllgemein_WerbeID" xml:space="preserve">
+    <value>Apps die Verwendung der Werbungs-ID für App-übergreifende Erlebnisse erlauben</value>
+  </data>
+  <data name="MenuItem_Einstellungen_Datenschutzprofile" xml:space="preserve">
+    <value>Datenschutzprofile</value>
+  </data>
+  <data name="MenuItem_Einstellungen_Einstellungen_reset" xml:space="preserve">
+    <value>Datenschutzeinstellungen zurücksetzen</value>
+  </data>
+  <data name="MenuItem_Ueber_Hilfe" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
+  <data name="MenuItem_Ueber_Spenden" xml:space="preserve">
+    <value>Spenden</value>
+  </data>
+  <data name="MenuItem_Ueber_Uber" xml:space="preserve">
+    <value>Über FixMy10</value>
+  </data>
+  <data name="TextBlock_TabAllgemein_WerbeIDErklaerung" xml:space="preserve">
+    <value>Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können.</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_GeraeteSync" xml:space="preserve">
+    <value>mit Geräten synchronisieren</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_MichKennenLernen" xml:space="preserve">
+    <value>mich kennenlernen</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffBenutzerdaten" xml:space="preserve">
+    <value>Zugriff auf Benutzerdaten</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffFunkempfang" xml:space="preserve">
+    <value>Zugriff auf Funkempfang</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffKalender" xml:space="preserve">
+    <value>Zugriff auf Kalender</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffKamera" xml:space="preserve">
+    <value>Zugriff auf Kamera</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffKontakte" xml:space="preserve">
+    <value>Zugriff auf Kontakte</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffMikrofon" xml:space="preserve">
+    <value>Zugriff auf Mikrofon</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffNachrichten" xml:space="preserve">
+    <value>Zugriff auf Nachrichten</value>
+  </data>
+  <data name="ChechBox_TabAppUndGeraeteZugriff_ZugriffPosition" xml:space="preserve">
+    <value>Zugriff auf Position</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_BenutzerInfo" xml:space="preserve">
+    <value>Apps den Zugriff auf meinen Namen, mein Bild und andere Kontoinfos erlauben</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_DefaultText" xml:space="preserve">
+    <value>Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kalender" xml:space="preserve">
+    <value>Apps Zugriff auf meinen Kalender erlauben. 
+
+Einige Apps benötige Zugriff auf Ihren Kalender, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kamera" xml:space="preserve">
+    <value>Apps die Verwendung meiner Kamera erlauben.
+
+Einige Apps benötige Zugriff auf Ihre Kamera, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.
+
+What is Camera and how do camera settings work?
+
+Many apps and services request and use your device’s camera(s) to provide you with convenient services, such as Skype video calls or taking a photo to add to your favorite social site. Windows camera settings give you control over which apps can use your camera(s).
+
+How do I know when the camera is on?
+
+If your system comes with a camera light, the light will turn on when the camera is in use. If your system doesn’t have a camera light, a notification will appear letting you know when the camera turns on or off.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Messages" xml:space="preserve">
+    <value>Apps das Lesen oder Senden von Nachrichten (SMS oder MMS) erlauben.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Mikrofon" xml:space="preserve">
+    <value>Apps die Verwendung meines Mikrofons erlauben.
+
+Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_MoreDevices" xml:space="preserve">
+    <value>Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Position" xml:space="preserve">
+    <value>Wenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen.</value>
+  </data>
+  <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Radio" xml:space="preserve">
+    <value>Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.</value>
+  </data>
+  <data name="ChechBox_TabFeedbackUndDiag_Telemetrie" xml:space="preserve">
+    <value>Telemetrie-Datenübertragung deaktivieren</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach" xml:space="preserve">
+    <value>Einfach</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_ArtDiagnose_Verbesert" xml:space="preserve">
+    <value>Verbessert</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_ArtDiagnose_Voll" xml:space="preserve">
+    <value>Voll</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_WieOftFeedback_Auto" xml:space="preserve">
+    <value>Automatisch</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_täglich" xml:space="preserve">
+    <value>Einmal täglich</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_wöchentlich" xml:space="preserve">
+    <value>Einmal wöchentlich</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_WieOftFeedback_Immer" xml:space="preserve">
+    <value>Immer</value>
+  </data>
+  <data name="ComboBox_TabFeedbackUndDiag_WieOftFeedback_Nie" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="TextBlock_TabFeedbackUndDiag_BeschreibungDiagnose" xml:space="preserve">
+    <value>Sendet Ihre Gerätedaten an Microsoft (kann in den Privatkundenversionen von Windows 10 nicht komplett deaktiviert werden</value>
+  </data>
+  <data name="TextBlock_TabFeedbackUndDiag_TelemetrieBeschreibung" xml:space="preserve">
+    <value>Microsoft kann darüber die Funktionen Ihres Geräts, die installierten Programme und die ordnungsgemäße Ausführung von Windows ermitteln. Außerdem wird mit dieser Option die allgemeine Fehlerberichterstattung an Microsoft aktiviert.</value>
+  </data>
+  <data name="TextBlock_TabFeedbackUndDiag_UeberschriftDiagnose" xml:space="preserve">
+    <value>Diagnose- und Nutzungsdaten</value>
+  </data>
+  <data name="TextBlock_TabFeedbackUndDiag_UeberschriftFeedback" xml:space="preserve">
+    <value>Feedbackhäufigkeit</value>
+  </data>
+  <data name="TextBlock_TabFeedbackUndDiag_WieOftFeedback" xml:space="preserve">
+    <value>Mein Feedback soll von Windows angefordert werden:</value>
+  </data>
 </root>

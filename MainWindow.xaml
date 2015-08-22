@@ -13,65 +13,65 @@
                                 <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
-                                            Text="Apps die Verwendung der Werbungs-ID für App-übergreifende Erlebnisse erlauben" Margin="5,0,0,0" Width="579" Height="47"/>
+                                            Text="{x:Static properties:Resources.ChechBox_TabAllgemein_WerbeID}" Margin="5,0,0,0" Width="579" Height="47"/>
                                     </TextBlock>
                                 </CheckBox>
                                 <CheckBox x:Name="checkBoxAllowSmartscreen" HorizontalAlignment="Left" Margin="28,119,0,0" VerticalAlignment="Top" Height="47" Width="687">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
-                                            Text="SmartScreen-Filter einschalten, um von Windows Store-Apps verwendete Webinahlte (URLs) zu überprüfen" Margin="5,0,0,0" Width="490"/>
+                                            Text="{x:Static properties:Resources.ChechBox_TabAllgemein_SmartScreen}" Margin="5,0,0,0" Width="490"/>
                                     </TextBlock>
                                 </CheckBox>
                                 <CheckBox x:Name="checkBoxAllowWriting" HorizontalAlignment="Left" Margin="28,169,0,0" VerticalAlignment="Top" Height="47" Width="687">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
-                                            Text="Informationen zu meinem Schreibverhalten an Microsoft senden, um die Eingabe- und Schreibfunktion zu verbessern" Margin="5,0,0,0" Width="490"/>
+                                            Text="{x:Static properties:Resources.ChechBox_TabAllgemein_Schreibverhalten}" Margin="5,0,0,0" Width="490"/>
                                     </TextBlock>
                                 </CheckBox>
                                 <CheckBox x:Name="checkBoxAllowSpeech" HorizontalAlignment="Left" Margin="28,219,0,0" VerticalAlignment="Top" Height="47" Width="687">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
-                                            Text="Websites den Zugriff auf die eigene Sprachliste gestatten, um die Anzeige lokal relevanter Inhalte zu ermöglichen" Margin="5,0,0,0" Width="490"/>
+                                            Text="{x:Static properties:Resources.ChechBox_TabAllgemein_Sprachliste}" Margin="5,0,0,0" Width="490"/>
                                     </TextBlock>
                                 </CheckBox>
-                                <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können." VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabAllgemein_WerbeIDErklaerung}" VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
                             </Grid>
                         </TabItem>
                         <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_AppUndGeräte}" LostFocus="TabItem_LostFocus">
                             <Grid Background="#FFE5E5E5">
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxAccountInfo" Content="Zugriff auf Benutzerdaten" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxAccountInfo_Checked" MouseEnter="checkBoxAccountInfo_MouseEnter" Unchecked="checkBoxAccountInfo_Unchecked"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxPosition" Content="Zugriff auf Position" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxCamera" Content="Zugriff auf Kamera" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMicrophone" Content="Zugriff auf Mikrofon" HorizontalAlignment="Left" Margin="28,111,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxContacts" Content="Zugriff auf Kontakte" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxCalendar" Content="Zugriff auf Kalender" HorizontalAlignment="Left" Margin="28,171,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMessages" Content="Zugriff auf Nachrichten" HorizontalAlignment="Left" Margin="28,201,0,0" VerticalAlignment="Top" Checked="checkBoxMessages_Checked" Unchecked="checkBoxMessages_Unchecked" MouseEnter="checkBoxMessages_MouseEnter"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxRadio" Content="Zugriff auf Funkempfang" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Checked="checkBoxRadio_Checked" Unchecked="checkBoxRadio_Unchecked" MouseEnter="checkBoxRadio_MouseEnter"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMoreDevices" Content="mit Geräten synchronisieren" HorizontalAlignment="Left" Margin="28,261,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
-                                <CheckBox x:Name="appAndDeviceAccessCheckBoxAppAndDevicesGetToKnowMe" Content="mich kennenlernen" HorizontalAlignment="Left" Margin="28,291,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxAccountInfo" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffBenutzerdaten}" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxAccountInfo_Checked" MouseEnter="checkBoxAccountInfo_MouseEnter" Unchecked="checkBoxAccountInfo_Unchecked"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxPosition" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffPosition}" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxCamera" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffKamera}" HorizontalAlignment="Left" Margin="28,81,0,0" VerticalAlignment="Top" Checked="checkBoxCamera_Checked" MouseEnter="checkBoxCamera_MouseEnter" Unchecked="checkBoxCamera_Unchecked"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMicrophone" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffMikrofon}" HorizontalAlignment="Left" Margin="28,111,0,0" VerticalAlignment="Top" Checked="checkBoxMicrophone_Checked" MouseEnter="checkBoxMicrophone_MouseEnter" Unchecked="checkBoxMicrophone_Unchecked" />
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxContacts" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffKontakte}" HorizontalAlignment="Left" Margin="28,141,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxCalendar" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffKalender}" HorizontalAlignment="Left" Margin="28,171,0,0" VerticalAlignment="Top" Checked="checkBoxCalendar_Checked" MouseEnter="checkBoxCalendar_MouseEnter" Unchecked="checkBoxCalendar_Unchecked"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMessages" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffNachrichten}" HorizontalAlignment="Left" Margin="28,201,0,0" VerticalAlignment="Top" Checked="checkBoxMessages_Checked" Unchecked="checkBoxMessages_Unchecked" MouseEnter="checkBoxMessages_MouseEnter"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxRadio" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffFunkempfang}" HorizontalAlignment="Left" Margin="28,231,0,0" VerticalAlignment="Top" Checked="checkBoxRadio_Checked" Unchecked="checkBoxRadio_Unchecked" MouseEnter="checkBoxRadio_MouseEnter"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxMoreDevices" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_GeraeteSync}" HorizontalAlignment="Left" Margin="28,261,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
+                                <CheckBox x:Name="appAndDeviceAccessCheckBoxAppAndDevicesGetToKnowMe" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_MichKennenLernen}" HorizontalAlignment="Left" Margin="28,291,0,0" VerticalAlignment="Top" Checked="checkBoxMoreDevices_Checked" Unchecked="checkBoxMoreDevices_Unchecked" MouseEnter="checkBoxMoreDevices_MouseEnter"/>
                                 <TextBox x:Name="appAndDeviceAccessTextBoxExplanation" HorizontalAlignment="Left" Height="360" Margin="239,14,0,-3" TextWrapping="Wrap" Text="Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen." VerticalAlignment="Top" Width="528" Padding="3" FontWeight="Normal" IsEnabled="False"/>
                             </Grid>
                         </TabItem>
                         <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_FeedbackUndDiagnose}">
                             <Grid Background="#FFE5E5E5">
-                                <TextBlock HorizontalAlignment="Left" Margin="28,14,0,0" TextWrapping="Wrap" Text="Feedbackhäufigkeit" VerticalAlignment="Top"/>
-                                <TextBlock HorizontalAlignment="Left" Margin="50,40,0,0" TextWrapping="Wrap" Text="Mein Feedback soll von Windows angefordert werden" VerticalAlignment="Top" FontWeight="Normal"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="28,14,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_UeberschriftFeedback}" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,40,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_WieOftFeedback}" VerticalAlignment="Top" FontWeight="Normal"/>
                                 <ComboBox HorizontalAlignment="Left" Margin="50,64,0,0" VerticalAlignment="Top" Width="193" SelectedIndex="4">
-                                    <ComboBoxItem>Automatisch</ComboBoxItem>
-                                    <ComboBoxItem>Immer</ComboBoxItem>
-                                    <ComboBoxItem>Einmal täglich</ComboBoxItem>
-                                    <ComboBoxItem>Einmal wöchentlich</ComboBoxItem>
-                                    <ComboBoxItem>Nie</ComboBoxItem>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_WieOftFeedback_Auto}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_WieOftFeedback_Immer}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_täglich}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_wöchentlich}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_WieOftFeedback_Nie}"/>
                                 </ComboBox>
-                                <TextBlock HorizontalAlignment="Left" Margin="28,118,0,0" TextWrapping="Wrap" Text="Diagnose- und Nutzungsdaten" VerticalAlignment="Top"/>
-                                <TextBlock HorizontalAlignment="Left" Margin="50,142,0,0" TextWrapping="Wrap" Text="Sendet Ihre Gerätedaten an Microsoft (kann in den Privatkundenversionen von Windows 10 nicht komplett deaktiviert werden" VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="28,118,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_UeberschriftDiagnose}" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,142,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_BeschreibungDiagnose}" VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
                                 <ComboBox HorizontalAlignment="Left" Margin="50,188,0,0" VerticalAlignment="Top" Width="193" SelectedIndex="0">
-                                    <ComboBoxItem>Einfach</ComboBoxItem>
-                                    <ComboBoxItem>Verbessert</ComboBoxItem>
-                                    <ComboBoxItem>Vollständig</ComboBoxItem>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_ArtDiagnose_Verbesert}"/>
+                                    <ComboBoxItem Content="{x:Static properties:Resources.ComboBox_TabFeedbackUndDiag_ArtDiagnose_Voll}"/>
                                 </ComboBox>
-                                <CheckBox Content="Telemetrie-Datenübertragung deaktivieren" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top"/>
-                                <TextBlock HorizontalAlignment="Left" Margin="50,275,0,0" TextWrapping="Wrap" Text="Microsoft kann darüber die Funktionen Ihres Geräts, die installierten Programme und die ordnungsgemäße Ausführung von Windows ermitteln. Außerdem wird mit dieser Option die allgemeine Fehlerberichterstattung an Microsoft aktiviert." VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
+                                <CheckBox Content="{x:Static properties:Resources.ChechBox_TabFeedbackUndDiag_Telemetrie}" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="50,275,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_TelemetrieBeschreibung}" VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
                             </Grid>
                         </TabItem>
                     </TabControl>
@@ -122,29 +122,29 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="Einstellungen" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75">
+        <Button Content="{x:Static properties:Resources.Button_Einstellungen}" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75">
             <Button.ContextMenu>
                 <ContextMenu Name="button_settings_contextmenu">
-                    <MenuItem Header="Alle Einstellungen zurücksetzen" >
+                    <MenuItem Header="{x:Static properties:Resources.MenuItem_Einstellungen_Einstellungen_reset}">
 
                     </MenuItem>
-                    <MenuItem Header="Datenschutzprofile">
+                    <MenuItem Header="{x:Static properties:Resources.MenuItem_Einstellungen_Datenschutzprofile}">
 
                     </MenuItem>
 
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
-        <Button Name="Über" Content="Über" HorizontalAlignment="Left" Margin="701,4,0,0" VerticalAlignment="Top" Width="75" ToolTip="Über">
+        <Button Name="Über" Content="{x:Static properties:Resources.Button_Ueber}" HorizontalAlignment="Left" Margin="701,4,0,0" VerticalAlignment="Top" Width="75" ToolTip="Über">
             <Button.ContextMenu>
                 <ContextMenu Name="button_help_contextmenu">
-                    <MenuItem Header="Über MyW10" >
+                    <MenuItem Header="{x:Static properties:Resources.MenuItem_Ueber_Uber}">
 
                     </MenuItem>
-                    <MenuItem Header="Hilfe">
+                    <MenuItem Header="{x:Static properties:Resources.MenuItem_Ueber_Hilfe}">
 
                     </MenuItem>
-                    <MenuItem Header="Spenden">
+                    <MenuItem Header="{x:Static properties:Resources.MenuItem_Ueber_Spenden}">
 
                     </MenuItem>
                 </ContextMenu>

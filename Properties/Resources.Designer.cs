@@ -61,6 +61,276 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Einstellungen ähnelt.
+        /// </summary>
+        public static string Button_Einstellungen {
+            get {
+                return ResourceManager.GetString("Button_Einstellungen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Über ähnelt.
+        /// </summary>
+        public static string Button_Ueber {
+            get {
+                return ResourceManager.GetString("Button_Ueber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Informationen zu meinem Schreibverhalten an Microsoft senden, um die Eingabe- und Schreibfunktion zu verbessern ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAllgemein_Schreibverhalten {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAllgemein_Schreibverhalten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die SmartScreen-Filter einschalten, um von Windows Store-Apps verwendete Webinahlte (URLs) zu überprüfen ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAllgemein_SmartScreen {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAllgemein_SmartScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Websites den Zugriff auf die eigene Sprachliste gestatten, um die Anzeige lokal relevanter Inhalte zu ermöglichen ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAllgemein_Sprachliste {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAllgemein_Sprachliste", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps die Verwendung der Werbungs-ID für App-übergreifende Erlebnisse erlauben ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAllgemein_WerbeID {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAllgemein_WerbeID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die mit Geräten synchronisieren ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_GeraeteSync {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_GeraeteSync", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die mich kennenlernen ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_MichKennenLernen {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_MichKennenLernen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Benutzerdaten ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffBenutzerdaten {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffBenutzerdaten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Funkempfang ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffFunkempfang {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffFunkempfang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kalender ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffKalender {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffKalender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kamera ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffKamera {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffKamera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kontakte ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffKontakte {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffKontakte", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Mikrofon ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffMikrofon {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffMikrofon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Nachrichten ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffNachrichten {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffNachrichten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Position ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAppUndGeraeteZugriff_ZugriffPosition {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAppUndGeraeteZugriff_ZugriffPosition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Telemetrie-Datenübertragung deaktivieren ähnelt.
+        /// </summary>
+        public static string ChechBox_TabFeedbackUndDiag_Telemetrie {
+            get {
+                return ResourceManager.GetString("ChechBox_TabFeedbackUndDiag_Telemetrie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Einfach ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Verbessert ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_ArtDiagnose_Verbesert {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_ArtDiagnose_Verbesert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Voll ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_ArtDiagnose_Voll {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_ArtDiagnose_Voll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Automatisch ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_WieOftFeedback_Auto {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_WieOftFeedback_Auto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Einmal täglich ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_täglich {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_täglich", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Einmal wöchentlich ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_wöchentlich {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_WieOftFeedback_Einmal_wöchentlich", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Immer ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_WieOftFeedback_Immer {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_WieOftFeedback_Immer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Nie ähnelt.
+        /// </summary>
+        public static string ComboBox_TabFeedbackUndDiag_WieOftFeedback_Nie {
+            get {
+                return ResourceManager.GetString("ComboBox_TabFeedbackUndDiag_WieOftFeedback_Nie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutzprofile ähnelt.
+        /// </summary>
+        public static string MenuItem_Einstellungen_Datenschutzprofile {
+            get {
+                return ResourceManager.GetString("MenuItem_Einstellungen_Datenschutzprofile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutzeinstellungen zurücksetzen ähnelt.
+        /// </summary>
+        public static string MenuItem_Einstellungen_Einstellungen_reset {
+            get {
+                return ResourceManager.GetString("MenuItem_Einstellungen_Einstellungen_reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Hilfe ähnelt.
+        /// </summary>
+        public static string MenuItem_Ueber_Hilfe {
+            get {
+                return ResourceManager.GetString("MenuItem_Ueber_Hilfe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Spenden ähnelt.
+        /// </summary>
+        public static string MenuItem_Ueber_Spenden {
+            get {
+                return ResourceManager.GetString("MenuItem_Ueber_Spenden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Über FixMy10 ähnelt.
+        /// </summary>
+        public static string MenuItem_Ueber_Uber {
+            get {
+                return ResourceManager.GetString("MenuItem_Ueber_Uber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutz ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz {
@@ -129,6 +399,151 @@ namespace FixMy10.Properties {
         public static string testString {
             get {
                 return ResourceManager.GetString("testString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bei der Einrichtung eines Nuterzkontos erstellt Windows 10 eine eindeutige ID für zielgerichtete Werbung. Dadurch ist es Microsoft möglich Sie über verschiedene Anwendungen hinweg und im Internet eindeutig zu identifizieren um personalisierte Anzeigen schalten zu können. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabAllgemein_WerbeIDErklaerung {
+            get {
+                return ResourceManager.GetString("TextBlock_TabAllgemein_WerbeIDErklaerung", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Sendet Ihre Gerätedaten an Microsoft (kann in den Privatkundenversionen von Windows 10 nicht komplett deaktiviert werden ähnelt.
+        /// </summary>
+        public static string TextBlock_TabFeedbackUndDiag_BeschreibungDiagnose {
+            get {
+                return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_BeschreibungDiagnose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Microsoft kann darüber die Funktionen Ihres Geräts, die installierten Programme und die ordnungsgemäße Ausführung von Windows ermitteln. Außerdem wird mit dieser Option die allgemeine Fehlerberichterstattung an Microsoft aktiviert. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabFeedbackUndDiag_TelemetrieBeschreibung {
+            get {
+                return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_TelemetrieBeschreibung", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Diagnose- und Nutzungsdaten ähnelt.
+        /// </summary>
+        public static string TextBlock_TabFeedbackUndDiag_UeberschriftDiagnose {
+            get {
+                return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_UeberschriftDiagnose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Feedbackhäufigkeit ähnelt.
+        /// </summary>
+        public static string TextBlock_TabFeedbackUndDiag_UeberschriftFeedback {
+            get {
+                return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_UeberschriftFeedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Mein Feedback soll von Windows angefordert werden: ähnelt.
+        /// </summary>
+        public static string TextBlock_TabFeedbackUndDiag_WieOftFeedback {
+            get {
+                return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_WieOftFeedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps den Zugriff auf meinen Namen, mein Bild und andere Kontoinfos erlauben ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_BenutzerInfo {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_BenutzerInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Hier finden Sie Erklärungen und ergänzende Informationen zu den einzelnen Einstellungen. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_DefaultText {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_DefaultText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps Zugriff auf meinen Kalender erlauben. 
+        ///
+        ///Einige Apps benötige Zugriff auf Ihren Kalender, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kalender {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kalender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps die Verwendung meiner Kamera erlauben.
+        ///
+        ///Einige Apps benötige Zugriff auf Ihre Kamera, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.
+        ///
+        ///What is Camera and how do camera settings work?
+        ///
+        ///Many apps and services request and use your device’s camera(s) to provide you with convenient services, such as Skype video calls or taking a photo to add to your favorite social site. Windows camera settings give you control over w [Rest der Zeichenfolge wurde abgeschnitten]&quot;; ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kamera {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kamera", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps das Lesen oder Senden von Nachrichten (SMS oder MMS) erlauben. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Messages {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Messages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Apps die Verwendung meines Mikrofons erlauben.
+        ///
+        ///Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Mikrofon {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Mikrofon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Erlauben Sie Apps, automatisch Informationen mit Drahtlosgeräten auszutauschen und zu synchronisieren, die nicht explizit mit Ihrem PC, Tablet oder Handy gekoppelt sind. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_MoreDevices {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_MoreDevices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Wenn Positionsdienste für dieses Konto aktiviert sind, können autorisierte Apps und Dienste Positionen und Positionsverlauf abfragen. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Position {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren. ähnelt.
+        /// </summary>
+        public static string TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Radio {
+            get {
+                return ResourceManager.GetString("TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Radio", resourceCulture);
             }
         }
     }
