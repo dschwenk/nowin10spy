@@ -214,6 +214,60 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die &quot;Do Not Track&quot;-Anforderungen (nicht nachverfolgen) senden ähnelt.
+        /// </summary>
+        public static string CheckBox_TabEdge_DoNotTrack {
+            get {
+                return ResourceManager.GetString("CheckBox_TabEdge_DoNotTrack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Seitenvorhersage verwenden, um den Browser zu beschleunigen sowie das Lesen und die gesamte Nutzung zu verbessern ähnelt.
+        /// </summary>
+        public static string CheckBox_TabEdge_Seitenvorhersage {
+            get {
+                return ResourceManager.GetString("CheckBox_TabEdge_Seitenvorhersage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Meinen PC mit SmartScreen-Filter vor schädlichen Websites und Downloads schützen ähnelt.
+        /// </summary>
+        public static string CheckBox_TabEdge_SmartScreen {
+            get {
+                return ResourceManager.GetString("CheckBox_TabEdge_SmartScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Wenn diese Option aktiviert ist, kann Ihr PC abhänging von der nachfolgenden Auswahl auch Teile zuvor heruntergeladener Windows Updates und -Apps an PCs in Ihrem lokalen Netzwerk oder PCs im Internet senden ähnelt.
+        /// </summary>
+        public static string CheckBox_TabWinUpdate_ShareUpdates {
+            get {
+                return ResourceManager.GetString("CheckBox_TabWinUpdate_ShareUpdates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die PCs in meinem lokalen Netzwerk ähnelt.
+        /// </summary>
+        public static string CheckBox_TabWinUpdate_ShareUpdatesLokal {
+            get {
+                return ResourceManager.GetString("CheckBox_TabWinUpdate_ShareUpdatesLokal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die PCs in meinem lokalen Netzwerk und PCs im Internet ähnelt.
+        /// </summary>
+        public static string CheckBox_TabWinUpdate_ShareUpdatesLokalUndInternet {
+            get {
+                return ResourceManager.GetString("CheckBox_TabWinUpdate_ShareUpdatesLokalUndInternet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Einfach ähnelt.
         /// </summary>
         public static string ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach {
@@ -412,6 +466,33 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Do Not Track (engl. für &quot;nicht verfolgen&quot;) signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabEdge_DoNotTrack {
+            get {
+                return ResourceManager.GetString("TextBlock_TabEdge_DoNotTrack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabEdge_Seitenvorhersage {
+            get {
+                return ResourceManager.GetString("TextBlock_TabEdge_Seitenvorhersage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabEdge_SmartScreen {
+            get {
+                return ResourceManager.GetString("TextBlock_TabEdge_SmartScreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Sendet Ihre Gerätedaten an Microsoft (kann in den Privatkundenversionen von Windows 10 nicht komplett deaktiviert werden ähnelt.
         /// </summary>
         public static string TextBlock_TabFeedbackUndDiag_BeschreibungDiagnose {
@@ -453,6 +534,33 @@ namespace FixMy10.Properties {
         public static string TextBlock_TabFeedbackUndDiag_WieOftFeedback {
             get {
                 return ResourceManager.GetString("TextBlock_TabFeedbackUndDiag_WieOftFeedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Übermittlung von Updates - Updates von mehr als einem Ort ähnelt.
+        /// </summary>
+        public static string TextBlock_TabWinUpdate_Ueberschrift {
+            get {
+                return ResourceManager.GetString("TextBlock_TabWinUpdate_Ueberschrift", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabWinUpdate_UeberschriftBeschreibung {
+            get {
+                return ResourceManager.GetString("TextBlock_TabWinUpdate_UeberschriftBeschreibung", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen ähnelt.
+        /// </summary>
+        public static string TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden {
+            get {
+                return ResourceManager.GetString("TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden", resourceCulture);
             }
         }
         

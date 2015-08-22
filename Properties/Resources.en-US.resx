@@ -312,4 +312,52 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
     <value>Mein Feedback soll von Windows angefordert werden:</value>
     <comment>translation needed</comment>
   </data>
+  <data name="CheckBox_TabEdge_DoNotTrack" xml:space="preserve">
+    <value>"Do Not Track"-Anforderungen (nicht nachverfolgen) senden</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="CheckBox_TabEdge_Seitenvorhersage" xml:space="preserve">
+    <value>Seitenvorhersage verwenden, um den Browser zu beschleunigen sowie das Lesen und die gesamte Nutzung zu verbessern</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="CheckBox_TabEdge_SmartScreen" xml:space="preserve">
+    <value>Meinen PC mit SmartScreen-Filter vor schädlichen Websites und Downloads schützen</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="CheckBox_TabWinUpdate_ShareUpdates" xml:space="preserve">
+    <value>Wenn diese Option aktiviert ist, kann Ihr PC abhänging von der nachfolgenden Auswahl auch Teile zuvor heruntergeladener Windows Updates und -Apps an PCs in Ihrem lokalen Netzwerk oder PCs im Internet senden</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="CheckBox_TabWinUpdate_ShareUpdatesLokal" xml:space="preserve">
+    <value>PCs in meinem lokalen Netzwerk</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="CheckBox_TabWinUpdate_ShareUpdatesLokalUndInternet" xml:space="preserve">
+    <value>PCs in meinem lokalen Netzwerk und PCs im Internet</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabEdge_DoNotTrack" xml:space="preserve">
+    <value>Do Not Track (engl. für "nicht verfolgen") signalisiert einer Website den Wunsch, dass diese über die Aktivitäten des Besuchers kein Benutzerprofil erstellt.</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabEdge_Seitenvorhersage" xml:space="preserve">
+    <value>Ihr Surfverhalten wird analysiert, um bevorzugte Seiten automatisch im Hintergrund zu laden.</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabEdge_SmartScreen" xml:space="preserve">
+    <value>Der SmartScreen-Filter soll helfen Sie vor Bedrohungen im Internet zu schützen. Dazu wird jede aufgerufene Website von Microsoft überprüft.</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabWinUpdate_Ueberschrift" xml:space="preserve">
+    <value>Übermittlung von Updates - Updates von mehr als einem Ort</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabWinUpdate_UeberschriftBeschreibung" xml:space="preserve">
+    <value>Lädt Windows-Updates und -Apps nicht nur von Microsoft, sondern auch von anderen PCs herunter. Dadurch können App- und Updatedownloads beschleunigt werden.</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden" xml:space="preserve">
+    <value>Updates von Microsoft abrufen und Updates auf folgenden PCs herunter- und hochladen</value>
+    <comment>translation needed</comment>
+  </data>
 </root>
