@@ -8,7 +8,7 @@
             <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz}" FontWeight="Bold" FontSize="14">
                 <Grid Background="#FFE5E5E5">
                     <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
-                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_Allgemein}">
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_Allgemein}" GotFocus="TabItem_Dataprivacy_General_GotFocus">
                             <Grid Background="#FFE5E5E5">
                                 <CheckBox x:Name="checkBoxAllowUseAdID" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Height="47" Width="687" Checked="checkBoxAllowUseAdID_Checked" Unchecked="checkBoxAllowUseAdID_Unchecked">
                                     <TextBlock>
@@ -16,7 +16,7 @@
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_WerbeID}" Margin="5,0,0,0" Width="579" Height="47"/>
                                     </TextBlock>
                                 </CheckBox>
-                                <CheckBox x:Name="checkBoxAllowSmartscreen" HorizontalAlignment="Left" Margin="28,119,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                <CheckBox x:Name="checkBoxAllowSmartscreen" HorizontalAlignment="Left" Margin="28,119,0,0" VerticalAlignment="Top" Height="47" Width="687" Checked="checkBoxAllowSmartscreen_Checked" Unchecked="checkBoxAllowSmartscreen_Unchecked">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_SmartScreen}" Margin="5,0,0,0" Width="490"/>
@@ -37,7 +37,7 @@
                                 <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabAllgemein_WerbeIDErklaerung}" VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
                             </Grid>
                         </TabItem>
-                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_AppUndGeräte}" LostFocus="TabItem_LostFocus">
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Datenschutz_AppUndGeräte}" LostFocus="TabItem_Dataprivacy_AppAndDeviceAcces_LostFocus" GotFocus="TabItem_Dataprivacy_AppAndDeviceAcces_GotFocus">
                             <Grid Background="#FFE5E5E5">
                                 <CheckBox x:Name="appAndDeviceAccessCheckBoxAccountInfo" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffBenutzerdaten}" HorizontalAlignment="Left" Margin="28,21,0,0" VerticalAlignment="Top" Checked="checkBoxAccountInfo_Checked" MouseEnter="checkBoxAccountInfo_MouseEnter" Unchecked="checkBoxAccountInfo_Unchecked"/>
                                 <CheckBox x:Name="appAndDeviceAccessCheckBoxPosition" Content="{x:Static properties:Resources.ChechBox_TabAppUndGeraeteZugriff_ZugriffPosition}" HorizontalAlignment="Left" Margin="28,51,0,0" VerticalAlignment="Top" Checked="checkBoxPosition_Checked" Unchecked="checkBoxPosition_Unchecked" MouseEnter="checkBoxPosition_MouseEnter"/>
@@ -150,7 +150,7 @@
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
-        <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="350" BorderThickness="0" IsEnabled="False"/>
+        <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="asdasdsad" VerticalAlignment="Top" Width="350" BorderThickness="0" IsEnabled="False" FontWeight="Bold"/>
         <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="663,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
             <Hyperlink NavigateUri="http://fixmy10.net">http://FixMy10.net</Hyperlink>
         </TextBlock>

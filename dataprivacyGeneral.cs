@@ -98,6 +98,84 @@ namespace FixMy10
 
 
 
+        /*
+        * SmartScreen Filter
+        */
+
+        /*
+         * Methode um zu prüfen ob aktuell der SmartScreen Filter verwendet wird
+         */
+        public void verifyAccessSmartScreenFilter()
+        {
+            Console.Write("check if SmartScreen filter is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost\\";
+            String key = "EnableWebContentEvaluation";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 1)
+                    {
+                        // tick checkbox
+                        ((MainWindow)Application.Current.MainWindow).checkCheckboxSmartScreenFilter();
+                    }
+                    else
+                    {
+                        // untick checkbox
+                        ((MainWindow)Application.Current.MainWindow).uncheckCheckboxSmartScreenFilter();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
+
+        public void allowSmartScreenFilter()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost\\";
+            String key = "EnableWebContentEvaluation";
+            try
+            {
+                Console.Write("allow use SmartScreen filter\n");
+                Registry.SetValue(@path, key, 1);
+
+                String Text = Properties.Resources.StatusText_SmartScreenFilter_aktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+        public void disallowSmartScreenFilter()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\AppHost\\";
+            String key = "EnableWebContentEvaluation";
+            try
+            {
+                Console.Write("disallow  use SmartScreen filter\n");
+                Registry.SetValue(@path, key, 0);
+
+                String Text = Properties.Resources.StatusText_SmartScreenFilter_deaktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
+
+
 
 
 

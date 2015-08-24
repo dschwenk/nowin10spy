@@ -385,6 +385,24 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die SmartScreen Filter wird verwendet ähnelt.
+        /// </summary>
+        public static string StatusText_SmartScreenFilter_aktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_SmartScreenFilter_aktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die SmartScreen Filter wird nicht verwendet ähnelt.
+        /// </summary>
+        public static string StatusText_SmartScreenFilter_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_SmartScreenFilter_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Verwendung von Werbe-ID deaktiviert ähnelt.
         /// </summary>
         public static string StatusText_WerbeID_deaktiviert {

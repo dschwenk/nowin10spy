@@ -380,4 +380,10 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   <data name="StatusText_ZugriffWeitereGeräte_erlaubt" xml:space="preserve">
     <value>Zugriff auf weitere Geräte erlaubt</value>
   </data>
+  <data name="StatusText_SmartScreenFilter_aktiviert" xml:space="preserve">
+    <value>SmartScreen Filter wird verwendet</value>
+  </data>
+  <data name="StatusText_SmartScreenFilter_deaktiviert" xml:space="preserve">
+    <value>SmartScreen Filter wird nicht verwendet</value>
+  </data>
 </root>

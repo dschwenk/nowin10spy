@@ -99,7 +99,7 @@ namespace FixMy10
         private void checkGeneralDataprivacyAccess()
         {
             dataprivacyGeneral.verifyAccessAdID();
-
+            dataprivacyGeneral.verifyAccessSmartScreenFilter();
         }
 
 
@@ -126,7 +126,20 @@ namespace FixMy10
         /// <param name="sender"></param>
         /// <param name="e"></param>
 
+        /*
+         * TabItem Datenschutz Allgemein bekommt Fokus
+         */
+        private void TabItem_Dataprivacy_General_GotFocus(object sender, RoutedEventArgs e)
+        {
+            // prüfe derzeitige Einstellungen (User könnte im Hintergrund eine Einstellung geändert haben)
+            checkGeneralDataprivacyAccess();
+        }
 
+
+
+        /*
+        * Werbe ID
+        */
 
         // Methoden zum Checkbox an/abhaken
         public void checkCheckboxWerbeID()
@@ -150,6 +163,32 @@ namespace FixMy10
         }
 
 
+        /*
+        * SmartScreen Filter
+        */
+
+        // Methoden zum Checkbox an/abhaken
+        public void checkCheckboxSmartScreenFilter()
+        {
+            checkBoxAllowSmartscreen.IsChecked = true;
+        }
+        public void uncheckCheckboxSmartScreenFilter()
+        {
+            checkBoxAllowSmartscreen.IsChecked = false;
+        }
+
+        // Listener Checkboxen
+        private void checkBoxAllowSmartscreen_Checked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.allowSmartScreenFilter();
+        }
+
+        private void checkBoxAllowSmartscreen_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.disallowSmartScreenFilter();
+        }
+
+
 
         /// <summary>
         /// Tab App- Gerätezugriff
@@ -160,10 +199,16 @@ namespace FixMy10
         /*
          * Methode setzt den Text der Datenschutzerklärungstextbox zurüeck
          */
-        private void TabItem_LostFocus(object sender, RoutedEventArgs e)
+        private void TabItem_Dataprivacy_AppAndDeviceAcces_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox textBox = this.appAndDeviceAccessTextBoxExplanation;
             textBox.Text = Properties.Resources.TextBox_TabAppAndDeviceAccess_TextBoxExplanation_DefaultText;
+        }
+
+        private void TabItem_Dataprivacy_AppAndDeviceAcces_GotFocus(object sender, RoutedEventArgs e)
+        {
+            // prüfe derzeitige Einstellungen (User könnte im Hintergrund eine Einstellung geändert haben)
+            checkAppAndDeviceAccess();
         }
 
 
@@ -436,6 +481,16 @@ namespace FixMy10
         {
             App.changeCultureAndUpdateGUI(new CultureInfo("en-US"));
         }
+
+
+
+
+
+
+
+
+
+
 
 
 
