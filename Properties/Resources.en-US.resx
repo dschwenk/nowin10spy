@@ -432,6 +432,14 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
     <value>Zugriff auf weitere Geräte erlaubt</value>
     <comment>translation needed</comment>
   </data>
+  <data name="StatusText_Schreibverhalten_aktiviert" xml:space="preserve">
+    <value>Informationen zum Schreibverhalten an Microsoft senden</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="StatusText_Schreibverhalten_deaktiviert" xml:space="preserve">
+    <value>Informationen zum Schreibverhalten nicht an Microsoft senden</value>
+    <comment>translation needed</comment>
+  </data>
   <data name="StatusText_SmartScreenFilter_aktiviert" xml:space="preserve">
     <value>SmartScreen filter is not used</value>
   </data>

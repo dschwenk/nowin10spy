@@ -22,7 +22,7 @@
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_SmartScreen}" Margin="5,0,0,0" Width="490"/>
                                     </TextBlock>
                                 </CheckBox>
-                                <CheckBox x:Name="checkBoxAllowWriting" HorizontalAlignment="Left" Margin="28,169,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                <CheckBox x:Name="checkBoxAllowWriting" HorizontalAlignment="Left" Margin="28,169,0,0" VerticalAlignment="Top" Height="47" Width="687" Unchecked="checkBoxAllowWriting_Unchecked" Checked="checkBoxAllowWriting_Checked">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_Schreibverhalten}" Margin="5,0,0,0" Width="490"/>
@@ -150,7 +150,7 @@
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
-        <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="asdasdsad" VerticalAlignment="Top" Width="350" BorderThickness="0" IsEnabled="False" FontWeight="Bold"/>
+        <TextBox Name="textBoxStatus" HorizontalAlignment="Left" Height="23" Margin="10,439,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="507" BorderThickness="0" IsEnabled="False" FontWeight="Bold"/>
         <TextBlock Name="textBoxURL" HorizontalAlignment="Left" Height="23" Margin="663,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122">
             <Hyperlink NavigateUri="http://fixmy10.net">http://FixMy10.net</Hyperlink>
         </TextBlock>

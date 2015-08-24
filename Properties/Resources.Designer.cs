@@ -385,6 +385,24 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Informationen zum Schreibverhalten an Microsoft senden ähnelt.
+        /// </summary>
+        public static string StatusText_Schreibverhalten_aktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_Schreibverhalten_aktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Informationen zum Schreibverhalten nicht an Microsoft senden ähnelt.
+        /// </summary>
+        public static string StatusText_Schreibverhalten_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_Schreibverhalten_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die SmartScreen Filter wird verwendet ähnelt.
         /// </summary>
         public static string StatusText_SmartScreenFilter_aktiviert {

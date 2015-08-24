@@ -100,6 +100,7 @@ namespace FixMy10
         {
             dataprivacyGeneral.verifyAccessAdID();
             dataprivacyGeneral.verifyAccessSmartScreenFilter();
+            dataprivacyGeneral.verifyAccessSendWritingInfo();
         }
 
 
@@ -187,6 +188,36 @@ namespace FixMy10
         {
             dataprivacyGeneral.disallowSmartScreenFilter();
         }
+
+
+
+
+
+        /*
+        * Informationen zum Schreibverhalten
+        */
+
+        // Methoden zum Checkbox an/abhaken
+        public void checkCheckboxSendWritingInfo()
+        {
+            checkBoxAllowWriting.IsChecked = true;
+        }
+        public void uncheckCheckboxSendWritingInfo()
+        {
+            checkBoxAllowWriting.IsChecked = false;
+        }
+
+        // Listener Checkboxen
+        private void checkBoxAllowWriting_Checked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.allowSendWritingInfo();
+        }        
+        private void checkBoxAllowWriting_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.disallowSendWritingInfo();
+        }
+
+
 
 
 
@@ -481,18 +512,6 @@ namespace FixMy10
         {
             App.changeCultureAndUpdateGUI(new CultureInfo("en-US"));
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

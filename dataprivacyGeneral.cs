@@ -177,6 +177,84 @@ namespace FixMy10
 
 
 
+        /*
+        * Informationen zum Schreibverhalten
+        */
+
+        /*
+         * Methode um zu prüfen ob aktuell Informationen über das Schreibverhalten an Microsoft gesendet werden
+         */
+        public void verifyAccessSendWritingInfo()
+        {
+            Console.Write("check if 'send writing info' is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Input\\TIPC\\";
+            String key = "Enabled";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 1)
+                    {
+                        // tick checkbox
+                        ((MainWindow)Application.Current.MainWindow).checkCheckboxSmartScreenFilter();
+                    }
+                    else
+                    {
+                        // untick checkbox
+                        ((MainWindow)Application.Current.MainWindow).uncheckCheckboxSmartScreenFilter();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
+
+        public void allowSendWritingInfo()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Input\\TIPC\\";
+            String key = "Enabled";
+            try
+            {
+                Console.Write("allow send writing info\n");
+                Registry.SetValue(@path, key, 1);
+
+                String Text = Properties.Resources.StatusText_Schreibverhalten_aktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+        public void disallowSendWritingInfo()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Input\\TIPC\\";
+            String key = "Enabled";
+            try
+            {
+                Console.Write("disallow send writing info\n");
+                Registry.SetValue(@path, key, 0);
+
+                String Text = Properties.Resources.StatusText_Schreibverhalten_deaktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
+
+
 
 
 
