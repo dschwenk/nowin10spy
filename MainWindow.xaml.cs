@@ -551,6 +551,16 @@ namespace FixMy10
         }
 
 
+        /*
+         * Test methode um Systemwiederhestllungspunkt erstellung zu testen
+         */
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            restorePoint restorePoint = new restorePoint();
+            restorePoint.CreateRestorePoint("restore point created by FixMy10");
+        }
+
+
 
 
 

@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
+using System.Security.Principal;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -100,6 +101,16 @@ namespace FixMy10
                     throw;
             }
         }
+
+
+        /*
+         * Method to verify if app was started with elevated privileges
+         */
+        public static bool isAppElevated()
+        {
+            return (new WindowsPrincipal(WindowsIdentity.GetCurrent()))
+                    .IsInRole(WindowsBuiltInRole.Administrator);
+        }    
 
 
 

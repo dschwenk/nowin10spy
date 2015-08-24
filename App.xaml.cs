@@ -19,14 +19,14 @@ namespace FixMy10
         // dictionary to collect command line arguments
         Dictionary<string, string> arguments = new Dictionary<string, string>();
 
+        helper helper = new helper();
 
         public App()
-        {
-            
+        {            
             
             // set app language
-            helper helper = new helper();
             helper.setAppLanguage();
+
         }
 
 
