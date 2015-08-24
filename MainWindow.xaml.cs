@@ -539,6 +539,19 @@ namespace FixMy10
 
 
 
+        /*
+         * Test methode um Updatefunktionalität zu testen
+         */
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            // check for update
+            updater updater = new updater();
+
+            updater.checkForUpdate();
+        }
+
+
+
 
 
 
