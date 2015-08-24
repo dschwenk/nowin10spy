@@ -101,6 +101,7 @@ namespace FixMy10
             dataprivacyGeneral.verifyAccessAdID();
             dataprivacyGeneral.verifyAccessSmartScreenFilter();
             dataprivacyGeneral.verifyAccessSendWritingInfo();
+            dataprivacyGeneral.verifyAccessSpeechList();
         }
 
 
@@ -218,6 +219,29 @@ namespace FixMy10
         }
 
 
+
+        /*
+        * Zugriff auf Sprachliste
+        */
+
+        // Methoden zum Checkbox an/abhaken
+        public void checkCheckboxAllowAccessSpeechList()
+        {
+            checkBoxAllowSpeech.IsChecked = true;
+        }
+        public void uncheckCheckboxAllowAccessSpeechList()
+        {
+            checkBoxAllowSpeech.IsChecked = false;
+        }
+        private void checkBoxAllowSpeech_Checked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.allowAccessSpeechList();
+        }
+
+        private void checkBoxAllowSpeech_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.disallowAccessSpeechList();
+        }
 
 
 
@@ -512,6 +536,8 @@ namespace FixMy10
         {
             App.changeCultureAndUpdateGUI(new CultureInfo("en-US"));
         }
+
+
 
 
 

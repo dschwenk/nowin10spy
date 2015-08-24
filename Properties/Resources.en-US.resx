@@ -218,7 +218,6 @@
     <value>Let apps access my calendar.
 
 Einige Apps benötige Zugriff auf Ihren Kalender, damit Sie bestimmungsgemäß funktionieren. Wenn Sie den Zugriff deaktivieren, schränken Sie möglicherweise deren Funktionsumfang ein.</value>
-    <comment>translation needed</comment>
   </data>
   <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Kamera" xml:space="preserve">
     <value>Let apps use my camera.
@@ -232,7 +231,6 @@ Many apps and services request and use your device’s camera(s) to provide you 
 How do I know when the camera is on?
 
 If your system comes with a camera light, the light will turn on when the camera is in use. If your system doesn’t have a camera light, a notification will appear letting you know when the camera turns on or off.</value>
-    <comment>translation needed</comment>
   </data>
   <data name="TextBox_TabAppAndDeviceAccess_TextBoxExplanation_Messages" xml:space="preserve">
     <value>Let apps read or send messages (text or MMS)</value>
@@ -445,5 +443,13 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   </data>
   <data name="StatusText_SmartScreenFilter_deaktiviert" xml:space="preserve">
     <value>SmartScreen filter is used</value>
+  </data>
+  <data name="StatusText_ZugriffAufsprachliste_aktiviert" xml:space="preserve">
+    <value>Zugriff auf Sprachliste gestattet</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="StatusText_ZugriffAufsprachliste_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Sprachliste nicht gestattet</value>
+    <comment>translation needed</comment>
   </data>
 </root>

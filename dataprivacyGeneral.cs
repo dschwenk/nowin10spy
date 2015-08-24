@@ -200,12 +200,12 @@ namespace FixMy10
                     if (regValue == 1)
                     {
                         // tick checkbox
-                        ((MainWindow)Application.Current.MainWindow).checkCheckboxSmartScreenFilter();
+                        ((MainWindow)Application.Current.MainWindow).checkCheckboxSendWritingInfo();
                     }
                     else
                     {
                         // untick checkbox
-                        ((MainWindow)Application.Current.MainWindow).uncheckCheckboxSmartScreenFilter();
+                        ((MainWindow)Application.Current.MainWindow).uncheckCheckboxSendWritingInfo();
                     }
                 }
             }
@@ -256,7 +256,80 @@ namespace FixMy10
 
 
 
+        /*
+        * Zugriff auf Sprachliste
+        */
 
+        /*
+         * Methode um zu prüfen ob Zugriff auf die Sprachliste gestattet ist
+         */
+        public void verifyAccessSpeechList()
+        {
+            Console.Write("check if 'access on speech list' is enabled\n");
+
+            String path = "HKEY_CURRENT_USER\\Control Panel\\International\\User Profile\\";
+            String key = "HttpAcceptLanguageOptOut";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 0)
+                    {
+                        // tick checkbox
+                        ((MainWindow)Application.Current.MainWindow).checkCheckboxAllowAccessSpeechList();
+                    }
+                    else
+                    {
+                        // untick checkbox
+                        ((MainWindow)Application.Current.MainWindow).uncheckCheckboxAllowAccessSpeechList();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
+
+        public void allowAccessSpeechList()
+        {
+            String path = "HKEY_CURRENT_USER\\Control Panel\\International\\User Profile\\";
+            String key = "HttpAcceptLanguageOptOut";
+            try
+            {
+                Console.Write("allow 'access on speech list'\n");
+                Registry.SetValue(@path, key, 0);
+
+                String Text = Properties.Resources.StatusText_ZugriffAufsprachliste_aktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+        public void disallowAccessSpeechList()
+        {
+            String path = "HKEY_CURRENT_USER\\Control Panel\\International\\User Profile\\";
+            String key = "HttpAcceptLanguageOptOut";
+            try
+            {
+                Console.Write("disallow 'access on speech list'\n");
+                Registry.SetValue(@path, key, 1);
+
+                String Text = Properties.Resources.StatusText_ZugriffAufsprachliste_deaktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
 
     }
 }

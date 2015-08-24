@@ -439,6 +439,24 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Sprachliste gestattet ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffAufsprachliste_aktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffAufsprachliste_aktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Sprachliste nicht gestattet ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffAufsprachliste_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffAufsprachliste_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Kontoinformationen deaktiviert ähnelt.
         /// </summary>
         public static string StatusText_ZugriffBenutzerinformationen_deaktiviert {

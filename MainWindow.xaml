@@ -28,7 +28,7 @@
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_Schreibverhalten}" Margin="5,0,0,0" Width="490"/>
                                     </TextBlock>
                                 </CheckBox>
-                                <CheckBox x:Name="checkBoxAllowSpeech" HorizontalAlignment="Left" Margin="28,219,0,0" VerticalAlignment="Top" Height="47" Width="687">
+                                <CheckBox x:Name="checkBoxAllowSpeech" HorizontalAlignment="Left" Margin="28,219,0,0" VerticalAlignment="Top" Height="47" Width="687" Checked="checkBoxAllowSpeech_Checked" Unchecked="checkBoxAllowSpeech_Unchecked">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_Sprachliste}" Margin="5,0,0,0" Width="490"/>
