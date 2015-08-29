@@ -80,55 +80,82 @@
                                 <TextBlock HorizontalAlignment="Left" Margin="50,275,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabFeedbackUndDiag_TelemetrieBeschreibung}" VerticalAlignment="Top" FontWeight="Normal" Width="568"/>
                             </Grid>
                         </TabItem>
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_WLAN}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+                                <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="clickedButtonrestartAppAsAdmin"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="169,109,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.testString}" VerticalAlignment="Top"/>
+                                <Button Content="change culture" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+                                <Button Content="check for update" HorizontalAlignment="Left" Margin="600,80,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1"/>
+                                <Button Content="create restor point" HorizontalAlignment="Left" Margin="539,291,0,0" VerticalAlignment="Top" Width="209" Click="Button_Click_2"/>
+                            </Grid>
+                        </TabItem>
+
                     </TabControl>
                 </Grid>
 
             </TabItem>
-            <TabItem Header="{x:Static properties:Resources.TabItem_WindowsUpdate}" FontSize="14" FontWeight="Bold">
+            <TabItem Header="{x:Static properties:Resources.TabItem_Tweaks}" FontWeight="Bold" FontSize="14">
+
                 <Grid Background="#FFE5E5E5">
-                    <TextBlock HorizontalAlignment="Left" Margin="37,24,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_Ueberschrift}" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_UeberschriftBeschreibung}" VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
-                    <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="55,106,0,0" VerticalAlignment="Top">
-                        <TextBlock>
+                    <TabControl HorizontalAlignment="Left" Height="402" VerticalAlignment="Top" Width="786">
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Explorer}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Customization}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+
+                            </Grid>
+                        </TabItem>
+
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_WindowsUpdate}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock HorizontalAlignment="Left" Margin="37,24,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_Ueberschrift}" VerticalAlignment="Top"/>
+                                <TextBlock HorizontalAlignment="Left" Margin="55,48,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_UeberschriftBeschreibung}" VerticalAlignment="Top" FontWeight="Normal" Width="536"/>
+                                <CheckBox x:Name="checkBoxAllowUpdateSharing" HorizontalAlignment="Left" Margin="55,106,0,0" VerticalAlignment="Top">
+                                    <TextBlock>
 		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
 			                    Text="{x:Static properties:Resources.CheckBox_TabWinUpdate_ShareUpdates}" Width="490"/>
-                        </TextBlock>
-                    </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="81,196,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden}" VerticalAlignment="Top" FontWeight="Normal" Width="477"/>
-                    <CheckBox x:Name="checkBoxAllowUpdateSharingLocalPCs" Content="{x:Static properties:Resources.CheckBox_TabWinUpdate_ShareUpdatesLokal}" HorizontalAlignment="Left" Margin="81,245,0,0" VerticalAlignment="Top"/>
-                    <CheckBox x:Name="checkBoxAllowUpdateSharingLocalAndInternetPCs" Content="{x:Static properties:Resources.CheckBox_TabWinUpdate_ShareUpdatesLokalUndInternet}" HorizontalAlignment="Left" Margin="81,275,0,0" VerticalAlignment="Top"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="{x:Static properties:Resources.TabItem_WLAN}" FontSize="14" FontWeight="Bold">
-                <Grid Background="#FFE5E5E5">
-                    <Button x:Name="buttonRestartAppAsAdmin" CommandParameter="disableXY" Content="Button" HorizontalAlignment="Left" Margin="492,179,0,0" VerticalAlignment="Top" Width="75" Click="clickedButtonrestartAppAsAdmin"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="169,109,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.testString}" VerticalAlignment="Top"/>
-                    <Button Content="change culture" HorizontalAlignment="Left" Margin="179,293,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-                    <Button Content="check for update" HorizontalAlignment="Left" Margin="600,80,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click_1"/>
-                    <Button Content="create restor point" HorizontalAlignment="Left" Margin="539,291,0,0" VerticalAlignment="Top" Width="209" Click="Button_Click_2"/>
-                </Grid>
-            </TabItem>
-            <TabItem Header="{x:Static properties:Resources.TabItem_Edge}" FontSize="14" FontWeight="Bold">
-                <Grid Background="#FFE5E5E5">
-                    <CheckBox Content="{x:Static properties:Resources.CheckBox_TabEdge_DoNotTrack}" HorizontalAlignment="Left" Margin="37,24,0,0" VerticalAlignment="Top"/>
-                    <TextBlock HorizontalAlignment="Left" Margin="77,45,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabEdge_DoNotTrack}" VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
-                    <CheckBox x:Name="checkBoxEdgePredictSites" Margin="37,102,-1,0" VerticalAlignment="Top">
-                        <TextBlock>
-		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
-			                    Text="{x:Static properties:Resources.CheckBox_TabEdge_Seitenvorhersage}" Width="490"/>
-                        </TextBlock>
-                    </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="77,142,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabEdge_Seitenvorhersage}" VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
-                    <CheckBox x:Name="checkBoxEdgeSmartscreen" Margin="37,184,-1,0" VerticalAlignment="Top">
-                        <TextBlock>
-		                    <AccessText TextWrapping="Wrap"  Margin="5,0,0,0"  
-			                    Text="{x:Static properties:Resources.CheckBox_TabEdge_SmartScreen}" Width="490"/>
-                        </TextBlock>
-                    </CheckBox>
-                    <TextBlock HorizontalAlignment="Left" Margin="77,224,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabEdge_SmartScreen}" VerticalAlignment="Top" Height="40" Width="673" FontWeight="Normal"/>
+                                    </TextBlock>
+                                </CheckBox>
+                                <TextBlock HorizontalAlignment="Left" Margin="81,196,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden}" VerticalAlignment="Top" FontWeight="Normal" Width="477"/>
+                                <CheckBox x:Name="checkBoxAllowUpdateSharingLocalPCs" Content="{x:Static properties:Resources.CheckBox_TabWinUpdate_ShareUpdatesLokal}" HorizontalAlignment="Left" Margin="81,245,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxAllowUpdateSharingLocalAndInternetPCs" Content="{x:Static properties:Resources.CheckBox_TabWinUpdate_ShareUpdatesLokalUndInternet}" HorizontalAlignment="Left" Margin="81,275,0,0" VerticalAlignment="Top"/>
+                            </Grid>
+                        </TabItem>
 
+                        <TabItem Header="{x:Static properties:Resources.TabItem_Edge}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_OneNote}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_WindowsDefender}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+
+                            </Grid>
+                        </TabItem>
+
+                    </TabControl>
                 </Grid>
+
+
             </TabItem>
+
+
+
+
         </TabControl>
         <Button Content="{x:Static properties:Resources.Button_Einstellungen}" HorizontalAlignment="Left" Margin="615,4,0,0" VerticalAlignment="Top" Width="75">
             <Button.ContextMenu>

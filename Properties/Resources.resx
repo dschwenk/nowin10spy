@@ -249,7 +249,7 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
     <value>Einige Apps verwenden auf dem Gerät Funkttechnik wie Bluetooth für den Empfang und das Senden von Daten. In einigen Fällen müssen Apps den Funkempfang aktivieren und deaktiveren um optimal zu funktionieren.</value>
   </data>
   <data name="ChechBox_TabFeedbackUndDiag_Telemetrie" xml:space="preserve">
-    <value>Telemetrie-Datenübertragung deaktivieren</value>
+    <value>Telemetrie-Datenübertragung aktivieren</value>
   </data>
   <data name="ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach" xml:space="preserve">
     <value>Einfach</value>
@@ -406,6 +406,21 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   </data>
   <data name="StatusText_ZugriffMichKennenlernen_deaktiviert" xml:space="preserve">
     <value>Zugriff auf Spracherkennung, Freihand und Eingabe deaktiviert</value>
+  </data>
+  <data name="TabItem_Customization" xml:space="preserve">
+    <value>Anpassungen</value>
+  </data>
+  <data name="TabItem_Explorer" xml:space="preserve">
+    <value>Explorer</value>
+  </data>
+  <data name="TabItem_OneNote" xml:space="preserve">
+    <value>One Note</value>
+  </data>
+  <data name="TabItem_Tweaks" xml:space="preserve">
+    <value>Tweaks</value>
+  </data>
+  <data name="TabItem_WindowsDefender" xml:space="preserve">
+    <value>Windows Defender</value>
   </data>
   <data name="TextBlock_TabAllgemein_MichKennenLernenErklaerung" xml:space="preserve">
     <value>Windows und Cortana können Ihre Stimme und Ihre Handschrift analysieren und so persönliche Empfehlungen verbessern. Microsoft sammelt Informationen zu Kontakten, Kalenderereignisse, Sprach- und Handschriftmuster sowie den Eingabeverlauf.</value>

@@ -214,7 +214,7 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Telemetrie-Datenübertragung deaktivieren ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Telemetrie-Datenübertragung aktivieren ähnelt.
         /// </summary>
         public static string ChechBox_TabFeedbackUndDiag_Telemetrie {
             get {
@@ -628,6 +628,15 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Anpassungen ähnelt.
+        /// </summary>
+        public static string TabItem_Customization {
+            get {
+                return ResourceManager.GetString("TabItem_Customization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Datenschutz ähnelt.
         /// </summary>
         public static string TabItem_Datenschutz {
@@ -669,6 +678,42 @@ namespace FixMy10.Properties {
         public static string TabItem_Edge {
             get {
                 return ResourceManager.GetString("TabItem_Edge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Explorer ähnelt.
+        /// </summary>
+        public static string TabItem_Explorer {
+            get {
+                return ResourceManager.GetString("TabItem_Explorer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die One Note ähnelt.
+        /// </summary>
+        public static string TabItem_OneNote {
+            get {
+                return ResourceManager.GetString("TabItem_OneNote", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Tweaks ähnelt.
+        /// </summary>
+        public static string TabItem_Tweaks {
+            get {
+                return ResourceManager.GetString("TabItem_Tweaks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Windows Defender ähnelt.
+        /// </summary>
+        public static string TabItem_WindowsDefender {
+            get {
+                return ResourceManager.GetString("TabItem_WindowsDefender", resourceCulture);
             }
         }
         
