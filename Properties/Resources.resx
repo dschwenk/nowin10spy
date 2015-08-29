@@ -398,4 +398,16 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   <data name="StatusText_ZugriffAufsprachliste_deaktiviert" xml:space="preserve">
     <value>Zugriff auf Sprachliste nicht gestattet</value>
   </data>
+  <data name="ChechBox_TabAllgemein_MichKennenLernen" xml:space="preserve">
+    <value>Zugriff auf Spracherkennung, Freihand und Eingabe</value>
+  </data>
+  <data name="StatusText_ZugriffMichKennenlernen_aktiviert" xml:space="preserve">
+    <value>Zugriff auf Spracherkennung, Freihand und Eingabe aktiviert</value>
+  </data>
+  <data name="StatusText_ZugriffMichKennenlernen_deaktiviert" xml:space="preserve">
+    <value>Zugriff auf Spracherkennung, Freihand und Eingabe deaktiviert</value>
+  </data>
+  <data name="TextBlock_TabAllgemein_MichKennenLernenErklaerung" xml:space="preserve">
+    <value>Windows und Cortana können Ihre Stimme und Ihre Handschrift analysieren und so persönliche Empfehlungen verbessern. Microsoft sammelt Informationen zu Kontakten, Kalenderereignisse, Sprach- und Handschriftmuster sowie den Eingabeverlauf.</value>
+  </data>
 </root>

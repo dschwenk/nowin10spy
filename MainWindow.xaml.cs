@@ -102,6 +102,7 @@ namespace FixMy10
             dataprivacyGeneral.verifyAccessSmartScreenFilter();
             dataprivacyGeneral.verifyAccessSendWritingInfo();
             dataprivacyGeneral.verifyAccessSpeechList();
+            dataprivacyGeneral.verifyAccessGetToKnowMe();
         }
 
 
@@ -241,6 +242,33 @@ namespace FixMy10
         private void checkBoxAllowSpeech_Unchecked(object sender, RoutedEventArgs e)
         {
             dataprivacyGeneral.disallowAccessSpeechList();
+        }
+
+
+
+
+        /*
+        * Mich kennenlerne - Spracherkennung, Freihand und Eingabe
+        */
+        // Methoden zum Checkbox an/abhaken
+        public void checkCheckboxcheckBoxGetToKnowMe()
+        {
+            checkBoxGetToKnowMe.IsChecked = true;
+        }
+        public void uncheckCheckboxcheckBoxGetToKnowMe()
+        {
+            checkBoxGetToKnowMe.IsChecked = false;
+        }
+
+
+        private void checkBoxGetToKnowMe_Checked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.allowGetToKnowMe();
+        }
+
+        private void checkBoxGetToKnowMe_Unchecked(object sender, RoutedEventArgs e)
+        {
+            dataprivacyGeneral.disallowGetToKnowMe();
         }
 
 
@@ -559,6 +587,8 @@ namespace FixMy10
             restorePoint restorePoint = new restorePoint();
             restorePoint.CreateRestorePoint("restore point created by FixMy10");
         }
+
+
 
 
 

@@ -331,5 +331,300 @@ namespace FixMy10
             }
         }
 
+
+
+
+
+
+
+        /*
+        * Mich kennenlernen - Spracherkennung, Freihand und Eingabe
+        */
+
+        /*
+         * Methode um zu prüfen ob Zugriff auf die Sprachliste gestattet ist
+         */
+        public void verifyAccessGetToKnowMe()
+        {
+            if (verifyAccessGetToKnowMe1() && verifyAccessGetToKnowMe2() && verifyAccessGetToKnowMe3() && verifyAccessGetToKnowMe4() && verifyAccessGetToKnowMe5())
+            {
+                // tick checkbox
+                ((MainWindow)Application.Current.MainWindow).checkCheckboxcheckBoxGetToKnowMe();
+            }
+            else
+            {
+                // untick checkbox
+                ((MainWindow)Application.Current.MainWindow).uncheckCheckboxcheckBoxGetToKnowMe();
+            }
+        }
+
+
+
+        private bool verifyAccessGetToKnowMe1()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            String key = "AcceptedPrivacyPolicy";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            return false;
+        }
+
+        private bool verifyAccessGetToKnowMe2()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\";
+            String key = "RestrictImplicitTextCollection";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            return false;
+        }
+
+        private bool verifyAccessGetToKnowMe3()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            String key = "RestrictImplicitInkCollection";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 0)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            return false;
+        }
+
+        private bool verifyAccessGetToKnowMe4()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore\\";
+            String key = "HarvestContacts";
+
+            // get value of registry key
+            try
+            {
+                int regValue = Convert.ToInt32(Registry.GetValue(@path, key, null));
+                if (regValue != null)
+                {
+                    if (regValue == 1)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            return false;
+        }
+
+        private bool verifyAccessGetToKnowMe5()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled\\";
+            String key = "Value";
+
+            try
+            {
+                string regValue = (string)Registry.GetValue(@path, key, null);
+                if (regValue != null)
+                {
+                    if (regValue == "Allow")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            return false;
+        }
+
+
+
+
+
+
+        public void allowGetToKnowMe()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            String key = "AcceptedPrivacyPolicy";
+            Console.Write("disallow get to know me\n");
+            try
+            {
+                Registry.SetValue(@path, key, 1);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\";
+            key = "RestrictImplicitTextCollection";
+            try
+            {
+                Registry.SetValue(@path, key, 0);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            key = "RestrictImplicitInkCollection";
+            try
+            {
+                Registry.SetValue(@path, key, 0);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore\\";
+            key = "HarvestContacts";
+            try
+            {
+                Registry.SetValue(@path, key, 1);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled\\";
+            key = "Value";
+            try
+            {
+                Registry.SetValue(@path, key, "Allow");
+
+                String Text = Properties.Resources.StatusText_ZugriffMichKennenlernen_aktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+        public void disallowGetToKnowMe()
+        {
+            String path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            String key = "AcceptedPrivacyPolicy";
+            Console.Write("disallow get to know me\n");
+            try
+            {
+                Registry.SetValue(@path, key, 0);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\";
+            key = "RestrictImplicitTextCollection";
+            try
+            {
+                Registry.SetValue(@path, key, 1);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Personalization\\Settings\\";
+            key = "RestrictImplicitInkCollection";
+            try
+            {
+                Registry.SetValue(@path, key, 1);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\InputPersonalization\\TrainedDataStore\\";
+            key = "HarvestContacts";
+            try
+            {
+                Registry.SetValue(@path, key, 0);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+            path = "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\DeviceAccess\\Global\\LooselyCoupled\\";
+            key = "Value";
+            try
+            {
+                Registry.SetValue(@path, key, "Deny");
+
+                String Text = Properties.Resources.StatusText_ZugriffMichKennenlernen_deaktiviert;
+                ((MainWindow)Application.Current.MainWindow).setStatusUpdateText(Text);
+            }
+            catch (Exception e)
+            {
+                errorDialogs.ShowErrorMessage(e, "Retriving keys of " + path + key);
+            }
+        }
+
+
     }
 }

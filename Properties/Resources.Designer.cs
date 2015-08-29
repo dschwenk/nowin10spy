@@ -79,6 +79,15 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Spracherkennung, Freihand und Eingabe ähnelt.
+        /// </summary>
+        public static string ChechBox_TabAllgemein_MichKennenLernen {
+            get {
+                return ResourceManager.GetString("ChechBox_TabAllgemein_MichKennenLernen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Informationen zu meinem Schreibverhalten an Microsoft senden, um die Eingabe- und Schreibfunktion zu verbessern ähnelt.
         /// </summary>
         public static string ChechBox_TabAllgemein_Schreibverhalten {
@@ -529,6 +538,24 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Spracherkennung, Freihand und Eingabe aktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffMichKennenlernen_aktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffMichKennenlernen_aktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Spracherkennung, Freihand und Eingabe deaktiviert ähnelt.
+        /// </summary>
+        public static string StatusText_ZugriffMichKennenlernen_deaktiviert {
+            get {
+                return ResourceManager.GetString("StatusText_ZugriffMichKennenlernen_deaktiviert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Zugriff auf Mikrofon deaktiviert ähnelt.
         /// </summary>
         public static string StatusText_ZugriffMikrofon_deaktiviert {
@@ -669,6 +696,15 @@ namespace FixMy10.Properties {
         public static string testString {
             get {
                 return ResourceManager.GetString("testString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Windows und Cortana können Ihre Stimme und Ihre Handschrift analysieren und so persönliche Empfehlungen verbessern. Microsoft sammelt Informationen zu Kontakten, Kalenderereignisse, Sprach- und Handschriftmuster sowie den Eingabeverlauf. ähnelt.
+        /// </summary>
+        public static string TextBlock_TabAllgemein_MichKennenLernenErklaerung {
+            get {
+                return ResourceManager.GetString("TextBlock_TabAllgemein_MichKennenLernenErklaerung", resourceCulture);
             }
         }
         
