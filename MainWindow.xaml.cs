@@ -17,7 +17,9 @@ namespace FixMy10
 
         dataprivacyAppAndDeviceAccess dataprivacyAppAndDeviceAccess = new dataprivacyAppAndDeviceAccess();
         dataprivacyGeneral dataprivacyGeneral = new dataprivacyGeneral();
+        tweakWindowsApps tweakWindowsApps = new tweakWindowsApps(); 
         helper helper = new helper();
+        systemInformation systemInformation = new systemInformation();
 
 
         public MainWindow()
@@ -37,6 +39,8 @@ namespace FixMy10
                 // verify app- and device access and tick accordingly checkboxes
                 checkAppAndDeviceAccess();
 
+                // verify which Windows Apps are installed
+                checkInstalledWindowsApps();
 
                 // remove status text in "taskbar"
                 textBoxStatus.Text = "";
@@ -120,6 +124,13 @@ namespace FixMy10
             dataprivacyAppAndDeviceAccess.checkAccessMessages();
             dataprivacyAppAndDeviceAccess.checkAccessRadio();
             dataprivacyAppAndDeviceAccess.checkAccessMoreDevices();
+        }
+
+
+
+        private void checkInstalledWindowsApps()
+        {
+            tweakWindowsApps.isAppBingWeatherInstalled();
         }
 
 
@@ -557,6 +568,47 @@ namespace FixMy10
 
 
 
+
+
+        /// <summary>
+        /// Tab App- Gerätezugriff
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+
+
+        /*
+         * Bing Wetter
+         */
+
+        public void checkCheckboxWindowsAppMicrosoftBingWeather()
+        {
+            checkBoxRemoveWindowsAppMicrosoftBingWeather.IsChecked = true;
+        }
+        public void uncheckCheckboxWindowsAppMicrosoftBingWeather()
+        {
+            checkBoxRemoveWindowsAppMicrosoftBingWeather.IsChecked = false;
+        }
+
+        private void checkBoxRemoveWindowsAppMicrosoftBingWeather_Checked(object sender, RoutedEventArgs e)
+        {
+            // remove Bing Weather
+            tweakWindowsApps.removeBingWeater();
+        }
+
+        private void checkBoxRemoveWindowsAppMicrosoftBingWeather_Unchecked(object sender, RoutedEventArgs e)
+        {
+            // add / install Bing Weather
+            tweakWindowsApps.addBingWeater();
+        }
+
+
+
+
+
+
+
+
         /*
          * Test methode um Spracheänderung zu testen
          */
@@ -587,6 +639,11 @@ namespace FixMy10
             restorePoint restorePoint = new restorePoint();
             restorePoint.CreateRestorePoint("restore point created by FixMy10");
         }
+
+
+
+
+
 
 
 

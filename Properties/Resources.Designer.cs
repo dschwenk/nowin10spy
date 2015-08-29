@@ -277,6 +277,51 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die 3D Builder ähnelt.
+        /// </summary>
+        public static string checkBoxWindowsAppMicrosoft3DBuilder {
+            get {
+                return ResourceManager.GetString("checkBoxWindowsAppMicrosoft3DBuilder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bing Finanzen ähnelt.
+        /// </summary>
+        public static string checkBoxWindowsAppMicrosoftBingFinance {
+            get {
+                return ResourceManager.GetString("checkBoxWindowsAppMicrosoftBingFinance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bing News ähnelt.
+        /// </summary>
+        public static string checkBoxWindowsAppMicrosoftBingNews {
+            get {
+                return ResourceManager.GetString("checkBoxWindowsAppMicrosoftBingNews", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bing Sport ähnelt.
+        /// </summary>
+        public static string checkBoxWindowsAppMicrosoftBingSports {
+            get {
+                return ResourceManager.GetString("checkBoxWindowsAppMicrosoftBingSports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Bing Wetter ähnelt.
+        /// </summary>
+        public static string checkBoxWindowsAppMicrosoftBingWeather {
+            get {
+                return ResourceManager.GetString("checkBoxWindowsAppMicrosoftBingWeather", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Einfach ähnelt.
         /// </summary>
         public static string ComboBox_TabFeedbackUndDiag_ArtDiagnose_Einfach {
@@ -709,6 +754,15 @@ namespace FixMy10.Properties {
         }
         
         /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Windows Apps ähnelt.
+        /// </summary>
+        public static string TabItem_WindowsApps {
+            get {
+                return ResourceManager.GetString("TabItem_WindowsApps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Sucht eine lokalisierte Zeichenfolge, die Windows Defender ähnelt.
         /// </summary>
         public static string TabItem_WindowsDefender {
@@ -858,6 +912,15 @@ namespace FixMy10.Properties {
         public static string TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden {
             get {
                 return ResourceManager.GetString("TextBlock_TabWinUpdate_UpdateVonMicrosoftUndUpdateHochHerunterLaden", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Wählen Sie welche Windows App Sie entfernen möchten. Angehakte Apps wurden bereits entfernt. Apps können durch Entfernen des Hakens neu installiert werden. ähnelt.
+        /// </summary>
+        public static string TextBlock_WindowsApps_Erklaerung {
+            get {
+                return ResourceManager.GetString("TextBlock_WindowsApps_Erklaerung", resourceCulture);
             }
         }
         

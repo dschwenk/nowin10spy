@@ -425,4 +425,26 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   <data name="TextBlock_TabAllgemein_MichKennenLernenErklaerung" xml:space="preserve">
     <value>Windows und Cortana können Ihre Stimme und Ihre Handschrift analysieren und so persönliche Empfehlungen verbessern. Microsoft sammelt Informationen zu Kontakten, Kalenderereignisse, Sprach- und Handschriftmuster sowie den Eingabeverlauf.</value>
   </data>
+  <data name="checkBoxWindowsAppMicrosoft3DBuilder" xml:space="preserve">
+    <value>3D Builder</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingFinance" xml:space="preserve">
+    <value>Bing Finanzen</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingNews" xml:space="preserve">
+    <value>Bing News</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingSports" xml:space="preserve">
+    <value>Bing Sport</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingWeather" xml:space="preserve">
+    <value>Bing Wetter</value>
+  </data>
+  <data name="TabItem_WindowsApps" xml:space="preserve">
+    <value>Windows Apps</value>
+  </data>
+  <data name="TextBlock_WindowsApps_Erklaerung" xml:space="preserve">
+    <value>Wählen Sie welche Windows App Sie entfernen möchten. Angehakte Apps wurden bereits entfernt. Apps können durch Entfernen des Hakens neu installiert werden.</value>
+    <comment>translation needed</comment>
+  </data>
 </root>

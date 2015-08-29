@@ -456,6 +456,21 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
     <value>Zugriff auf Spracherkennung, Freihand und Eingabe</value>
     <comment>translation needed</comment>
   </data>
+  <data name="checkBoxWindowsAppMicrosoft3DBuilder" xml:space="preserve">
+    <value>3D Builder</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingFinance" xml:space="preserve">
+    <value>Bing Finance</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingNews" xml:space="preserve">
+    <value>Bing News</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingSports" xml:space="preserve">
+    <value>Bing Sports</value>
+  </data>
+  <data name="checkBoxWindowsAppMicrosoftBingWeather" xml:space="preserve">
+    <value>Bing Weather</value>
+  </data>
   <data name="StatusText_ZugriffMichKennenlernen_aktiviert" xml:space="preserve">
     <value>Zugriff auf Spracherkennung, Freihand und Eingabe aktiviert</value>
     <comment>translation needed</comment>
@@ -476,11 +491,18 @@ Einige Apps benötige Zugriff auf Ihr Mikrofon, damit Sie bestimmungsgemäß fun
   <data name="TabItem_Tweaks" xml:space="preserve">
     <value>Tweaks</value>
   </data>
+  <data name="TabItem_WindowsApps" xml:space="preserve">
+    <value>Windows Apps</value>
+  </data>
   <data name="TabItem_WindowsDefender" xml:space="preserve">
     <value>Windows Defender</value>
   </data>
   <data name="TextBlock_TabAllgemein_MichKennenLernenErklaerung" xml:space="preserve">
     <value>Windows und Cortana können Ihre Stimme und Ihre Handschrift analysieren und so persönliche Empfehlungen verbessern. Microsoft sammelt Informationen zu Kontakten, Kalenderereignisse, Sprach- und Handschriftmuster sowie den Eingabeverlauf.</value>
+    <comment>translation needed</comment>
+  </data>
+  <data name="TextBlock_WindowsApps_Erklaerung" xml:space="preserve">
+    <value>Wählen Sie welche Windows App Sie entfernen möchten. Angehakte Apps wurden bereits entfernt. Apps können durch Entfernen des Hakens neu installiert werden.</value>
     <comment>translation needed</comment>
   </data>
 </root>

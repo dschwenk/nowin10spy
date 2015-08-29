@@ -16,7 +16,7 @@
                                             Text="{x:Static properties:Resources.ChechBox_TabAllgemein_WerbeID}" Margin="5,0,0,0" Width="579" Height="47"/>
                                     </TextBlock>
                                 </CheckBox>
-                                <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabAllgemein_WerbeIDErklaerung}" VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>                                
+                                <TextBlock HorizontalAlignment="Left" Margin="64,45,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_TabAllgemein_WerbeIDErklaerung}" VerticalAlignment="Top" Height="93" Width="673" FontWeight="Normal"/>
                                 <CheckBox x:Name="checkBoxAllowSmartscreen" HorizontalAlignment="Left" Margin="28,119,0,0" VerticalAlignment="Top" Height="47" Width="687" Checked="checkBoxAllowSmartscreen_Checked" Unchecked="checkBoxAllowSmartscreen_Unchecked">
                                     <TextBlock>
                                         <AccessText TextWrapping="Wrap"  
@@ -109,6 +109,17 @@
                         <TabItem Header="{x:Static properties:Resources.TabItem_Customization}" FontSize="14" FontWeight="Bold">
                             <Grid Background="#FFE5E5E5">
 
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem Header="{x:Static properties:Resources.TabItem_WindowsApps}" FontSize="14" FontWeight="Bold">
+                            <Grid Background="#FFE5E5E5">
+                                <TextBlock HorizontalAlignment="Left" Margin="25,20,0,0" TextWrapping="Wrap" Text="{x:Static properties:Resources.TextBlock_WindowsApps_Erklaerung}" VerticalAlignment="Top" Width="681"/>
+                                <CheckBox x:Name="checkBoxRemoveWindowsAppMicrosoft3DBuilder" Content="{x:Static properties:Resources.checkBoxWindowsAppMicrosoft3DBuilder}" HorizontalAlignment="Left" Margin="41,76,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxRemoveWindowsAppMicrosoftBingFinance" Content="{x:Static properties:Resources.checkBoxWindowsAppMicrosoftBingFinance}" HorizontalAlignment="Left" Margin="41,106,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxRemoveWindowsAppMicrosoftBingNews" Content="{x:Static properties:Resources.checkBoxWindowsAppMicrosoftBingNews}" HorizontalAlignment="Left" Margin="41,136,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxRemoveWindowsAppMicrosoftBingSports" Content="{x:Static properties:Resources.checkBoxWindowsAppMicrosoftBingSports}" HorizontalAlignment="Left" Margin="41,166,0,0" VerticalAlignment="Top"/>
+                                <CheckBox x:Name="checkBoxRemoveWindowsAppMicrosoftBingWeather" Content="{x:Static properties:Resources.checkBoxWindowsAppMicrosoftBingWeather}" HorizontalAlignment="Left" Margin="41,196,0,0" VerticalAlignment="Top" Checked="checkBoxRemoveWindowsAppMicrosoftBingWeather_Checked" Unchecked="checkBoxRemoveWindowsAppMicrosoftBingWeather_Unchecked"/>
                             </Grid>
                         </TabItem>
 
